@@ -45,10 +45,9 @@
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.ForeColor = System.Drawing.Color.Transparent;
-            this.btnCerrar.Location = new System.Drawing.Point(997, 33);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCerrar.Location = new System.Drawing.Point(748, 27);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(44, 34);
+            this.btnCerrar.Size = new System.Drawing.Size(33, 28);
             this.btnCerrar.TabIndex = 17;
             this.btnCerrar.Text = "X";
             this.btnCerrar.UseVisualStyleBackColor = false;
@@ -64,13 +63,13 @@
             this.btnMarcas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMarcas.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMarcas.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnMarcas.Location = new System.Drawing.Point(64, 424);
-            this.btnMarcas.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMarcas.Location = new System.Drawing.Point(48, 344);
             this.btnMarcas.Name = "btnMarcas";
-            this.btnMarcas.Size = new System.Drawing.Size(236, 47);
+            this.btnMarcas.Size = new System.Drawing.Size(177, 38);
             this.btnMarcas.TabIndex = 16;
             this.btnMarcas.Text = "Marcas";
             this.btnMarcas.UseVisualStyleBackColor = true;
+            this.btnMarcas.Click += new System.EventHandler(this.btnMarcas_Click);
             // 
             // btnCategorias
             // 
@@ -82,23 +81,22 @@
             this.btnCategorias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCategorias.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCategorias.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnCategorias.Location = new System.Drawing.Point(64, 359);
-            this.btnCategorias.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCategorias.Location = new System.Drawing.Point(48, 292);
             this.btnCategorias.Name = "btnCategorias";
-            this.btnCategorias.Size = new System.Drawing.Size(236, 47);
+            this.btnCategorias.Size = new System.Drawing.Size(177, 38);
             this.btnCategorias.TabIndex = 15;
             this.btnCategorias.Text = "Categorías";
             this.btnCategorias.UseVisualStyleBackColor = true;
+            this.btnCategorias.Click += new System.EventHandler(this.btnCategorias_Click);
             // 
             // lblGestionARticulos
             // 
             this.lblGestionARticulos.AutoSize = true;
             this.lblGestionARticulos.Font = new System.Drawing.Font("Microsoft Tai Le", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGestionARticulos.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.lblGestionARticulos.Location = new System.Drawing.Point(335, 78);
-            this.lblGestionARticulos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblGestionARticulos.Location = new System.Drawing.Point(251, 63);
             this.lblGestionARticulos.Name = "lblGestionARticulos";
-            this.lblGestionARticulos.Size = new System.Drawing.Size(347, 43);
+            this.lblGestionARticulos.Size = new System.Drawing.Size(289, 34);
             this.lblGestionARticulos.TabIndex = 14;
             this.lblGestionARticulos.Text = "Catálogo de artículos";
             // 
@@ -112,10 +110,9 @@
             this.btnArticulos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnArticulos.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnArticulos.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnArticulos.Location = new System.Drawing.Point(64, 178);
-            this.btnArticulos.Margin = new System.Windows.Forms.Padding(4);
+            this.btnArticulos.Location = new System.Drawing.Point(48, 145);
             this.btnArticulos.Name = "btnArticulos";
-            this.btnArticulos.Size = new System.Drawing.Size(236, 47);
+            this.btnArticulos.Size = new System.Drawing.Size(177, 38);
             this.btnArticulos.TabIndex = 13;
             this.btnArticulos.Text = "Artículos";
             this.btnArticulos.UseVisualStyleBackColor = true;
@@ -123,9 +120,9 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1100, 600);
+            this.ClientSize = new System.Drawing.Size(825, 488);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnMarcas);
             this.Controls.Add(this.btnCategorias);
@@ -133,8 +130,9 @@
             this.Controls.Add(this.btnArticulos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
-            this.MaximumSize = new System.Drawing.Size(1100, 600);
-            this.MinimumSize = new System.Drawing.Size(1100, 600);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximumSize = new System.Drawing.Size(825, 488);
+            this.MinimumSize = new System.Drawing.Size(825, 488);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

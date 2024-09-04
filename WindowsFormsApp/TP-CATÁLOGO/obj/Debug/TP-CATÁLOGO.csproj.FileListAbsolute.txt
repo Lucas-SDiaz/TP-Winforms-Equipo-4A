@@ -9,3 +9,16 @@ C:\Users\lucas\OneDrive\Escritorio\GitHub\TP-Winforms-Equipo-4A\WindowsFormsApp\
 C:\Users\lucas\OneDrive\Escritorio\GitHub\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP-CATÁLOGO.exe
 C:\Users\lucas\OneDrive\Escritorio\GitHub\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP-CATÁLOGO.pdb
 C:\Users\lucas\OneDrive\Escritorio\GitHub\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP_CATÁLOGO.MainForm.resources
+C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\bin\Debug\TP-CATÁLOGO.exe.config
+C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\bin\Debug\TP-CATÁLOGO.exe
+C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\bin\Debug\TP-CATÁLOGO.pdb
+C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP-CATÁLOGO.csproj.AssemblyReference.cache
+C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP_CATÁLOGO.ArticulosForm.resources
+C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP_CATÁLOGO.MainForm.resources
+C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP_CATÁLOGO.Properties.Resources.resources
+C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP-CATÁLOGO.csproj.GenerateResource.cache
+C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP-CATÁLOGO.csproj.CoreCompileInputs.cache
+C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP-CATÁLOGO.exe
+C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP-CATÁLOGO.pdb
+C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP_CATÁLOGO.MarcasForm.resources
+C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP_CATÁLOGO.CategoriasForm.resources

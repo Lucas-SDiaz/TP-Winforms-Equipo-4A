@@ -27,5 +27,17 @@ namespace TP_CATÁLOGO
         {
             Close();
         }
+
+        private void btnMarcas_Click(object sender, EventArgs e)
+        {
+            MarcasForm ventaMarcas = new MarcasForm();
+            ventaMarcas.ShowDialog();
+        }
+
+        private void btnCategorias_Click(object sender, EventArgs e)
+        {
+            CategoriasForm ventanaCategorias = new CategoriasForm();
+            ventanaCategorias.ShowDialog();
+        }
     }
 }
