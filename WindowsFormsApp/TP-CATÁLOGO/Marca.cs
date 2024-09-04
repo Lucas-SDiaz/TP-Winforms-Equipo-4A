@@ -8,5 +8,8 @@ namespace TP_CATÁLOGO
 {
     internal class Marca
     {
+        public int ID_Marca { get; set; }
+        public string Descripcion { get; set; }
+        public Marca() { }
     }
 }
