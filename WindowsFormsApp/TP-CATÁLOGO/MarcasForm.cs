@@ -26,5 +26,11 @@ namespace TP_CATÁLOGO
         {
 
         }
+
+        private void btnAgregarMarca_Click(object sender, EventArgs e)
+        {
+            AgregarMarcaFrm ventanaAgregarMarca = new AgregarMarcaFrm();
+            ventanaAgregarMarca.ShowDialog();
+        }
     }
 }

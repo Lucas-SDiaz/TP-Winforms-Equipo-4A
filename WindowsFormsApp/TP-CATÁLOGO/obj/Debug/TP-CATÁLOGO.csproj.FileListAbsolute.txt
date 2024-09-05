@@ -22,3 +22,4 @@ C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-C
 C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP-CATÁLOGO.pdb
 C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP_CATÁLOGO.MarcasForm.resources
 C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP_CATÁLOGO.CategoriasForm.resources
+C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP_CATÁLOGO.AgregarMarcaFrm.resources
