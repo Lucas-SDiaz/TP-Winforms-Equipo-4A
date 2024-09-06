@@ -23,3 +23,8 @@ C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-C
 C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP_CATÁLOGO.MarcasForm.resources
 C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP_CATÁLOGO.CategoriasForm.resources
 C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP_CATÁLOGO.AgregarMarcaFrm.resources
+C:\Users\lucas\OneDrive\Escritorio\GitHub\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP_CATÁLOGO.AgregarMarcaFrm.resources
+C:\Users\lucas\OneDrive\Escritorio\GitHub\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP_CATÁLOGO.CategoriasForm.resources
+C:\Users\lucas\OneDrive\Escritorio\GitHub\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP_CATÁLOGO.MarcasForm.resources
+C:\Users\lucas\OneDrive\Escritorio\GitHub\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP_CATÁLOGO.AgregarCategoriaFrm.resources
+C:\Users\lucas\OneDrive\Escritorio\GitHub\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP_CATÁLOGO.DetalleArticuloFrm.resources

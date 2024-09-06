@@ -41,10 +41,10 @@
             // 
             this.btnModificarCategoria.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificarCategoria.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnModificarCategoria.Location = new System.Drawing.Point(105, 301);
-            this.btnModificarCategoria.Margin = new System.Windows.Forms.Padding(2);
+            this.btnModificarCategoria.Location = new System.Drawing.Point(140, 370);
+            this.btnModificarCategoria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnModificarCategoria.Name = "btnModificarCategoria";
-            this.btnModificarCategoria.Size = new System.Drawing.Size(124, 34);
+            this.btnModificarCategoria.Size = new System.Drawing.Size(165, 42);
             this.btnModificarCategoria.TabIndex = 33;
             this.btnModificarCategoria.Text = "Modificar categoría";
             this.btnModificarCategoria.UseVisualStyleBackColor = true;
@@ -57,10 +57,10 @@
             this.btnEliminarCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarCategoria.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarCategoria.ForeColor = System.Drawing.Color.Black;
-            this.btnEliminarCategoria.Location = new System.Drawing.Point(521, 300);
-            this.btnEliminarCategoria.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEliminarCategoria.Location = new System.Drawing.Point(695, 369);
+            this.btnEliminarCategoria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEliminarCategoria.Name = "btnEliminarCategoria";
-            this.btnEliminarCategoria.Size = new System.Drawing.Size(143, 34);
+            this.btnEliminarCategoria.Size = new System.Drawing.Size(191, 42);
             this.btnEliminarCategoria.TabIndex = 32;
             this.btnEliminarCategoria.Text = "Eliminar categoría";
             this.btnEliminarCategoria.UseVisualStyleBackColor = true;
@@ -68,11 +68,11 @@
             // dgvArticulos
             // 
             this.dgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvArticulos.Location = new System.Drawing.Point(105, 127);
-            this.dgvArticulos.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvArticulos.Location = new System.Drawing.Point(140, 156);
+            this.dgvArticulos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvArticulos.Name = "dgvArticulos";
             this.dgvArticulos.RowHeadersWidth = 51;
-            this.dgvArticulos.Size = new System.Drawing.Size(559, 144);
+            this.dgvArticulos.Size = new System.Drawing.Size(745, 177);
             this.dgvArticulos.TabIndex = 31;
             // 
             // btnAgregarCategoría
@@ -83,22 +83,23 @@
             this.btnAgregarCategoría.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarCategoría.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarCategoría.ForeColor = System.Drawing.Color.Black;
-            this.btnAgregarCategoría.Location = new System.Drawing.Point(521, 366);
-            this.btnAgregarCategoría.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAgregarCategoría.Location = new System.Drawing.Point(695, 450);
+            this.btnAgregarCategoría.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAgregarCategoría.Name = "btnAgregarCategoría";
-            this.btnAgregarCategoría.Size = new System.Drawing.Size(143, 50);
+            this.btnAgregarCategoría.Size = new System.Drawing.Size(191, 62);
             this.btnAgregarCategoría.TabIndex = 30;
             this.btnAgregarCategoría.Text = "Agregar categoría";
             this.btnAgregarCategoría.UseVisualStyleBackColor = true;
+            this.btnAgregarCategoría.Click += new System.EventHandler(this.btnAgregarCategoría_Click);
             // 
             // btnAtras
             // 
             this.btnAtras.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAtras.ForeColor = System.Drawing.Color.Black;
-            this.btnAtras.Location = new System.Drawing.Point(105, 52);
-            this.btnAtras.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAtras.Location = new System.Drawing.Point(140, 64);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(27, 25);
+            this.btnAtras.Size = new System.Drawing.Size(36, 31);
             this.btnAtras.TabIndex = 29;
             this.btnAtras.Text = "<";
             this.btnAtras.UseVisualStyleBackColor = true;
@@ -109,17 +110,18 @@
             this.lblCategorias.AutoSize = true;
             this.lblCategorias.Font = new System.Drawing.Font("Microsoft Tai Le", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategorias.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.lblCategorias.Location = new System.Drawing.Point(310, 52);
+            this.lblCategorias.Location = new System.Drawing.Point(413, 64);
+            this.lblCategorias.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCategorias.Name = "lblCategorias";
-            this.lblCategorias.Size = new System.Drawing.Size(153, 34);
+            this.lblCategorias.Size = new System.Drawing.Size(184, 43);
             this.lblCategorias.TabIndex = 34;
             this.lblCategorias.Text = "Categorías";
             // 
             // CategoriasForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(825, 488);
+            this.ClientSize = new System.Drawing.Size(1100, 601);
             this.Controls.Add(this.lblCategorias);
             this.Controls.Add(this.btnModificarCategoria);
             this.Controls.Add(this.btnEliminarCategoria);
@@ -127,6 +129,7 @@
             this.Controls.Add(this.btnAgregarCategoría);
             this.Controls.Add(this.btnAtras);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "CategoriasForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CategoriasForm";

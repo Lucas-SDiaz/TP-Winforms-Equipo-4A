@@ -10,22 +10,21 @@ using System.Windows.Forms;
 
 namespace TP_CATÁLOGO
 {
-    public partial class CategoriasForm : Form
+    public partial class DetalleArticuloFrm : Form
     {
-        public CategoriasForm()
+        public DetalleArticuloFrm()
         {
             InitializeComponent();
         }
 
-        private void btnAtras_Click(object sender, EventArgs e)
+        private void btnCerrar_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void btnAgregarCategoría_Click(object sender, EventArgs e)
+        private void lblPrecio_Click(object sender, EventArgs e)
         {
-            AgregarCategoriaFrm ventanaAgregarCat = new AgregarCategoriaFrm();
-            ventanaAgregarCat.ShowDialog();
+
         }
     }
 }

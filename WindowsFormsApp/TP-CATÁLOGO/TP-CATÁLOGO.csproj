@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgregarCategoriaFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarCategoriaFrm.Designer.cs">
+      <DependentUpon>AgregarCategoriaFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AgregarMarcaFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,12 @@
     <Compile Include="CategoriasForm.Designer.cs">
       <DependentUpon>CategoriasForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DetalleArticuloFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetalleArticuloFrm.Designer.cs">
+      <DependentUpon>DetalleArticuloFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Imagen.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -82,6 +94,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AgregarCategoriaFrm.resx">
+      <DependentUpon>AgregarCategoriaFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AgregarMarcaFrm.resx">
       <DependentUpon>AgregarMarcaFrm.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CategoriasForm.resx">
       <DependentUpon>CategoriasForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetalleArticuloFrm.resx">
+      <DependentUpon>DetalleArticuloFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

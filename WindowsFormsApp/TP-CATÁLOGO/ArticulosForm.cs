@@ -24,7 +24,8 @@ namespace TP_CATÁLOGO
 
         private void btnVerDetalle_Click(object sender, EventArgs e)
         {
-
+            DetalleArticuloFrm ventanaDetalleArticulo = new DetalleArticuloFrm();
+            ventanaDetalleArticulo.ShowDialog();
         }
     }
 }

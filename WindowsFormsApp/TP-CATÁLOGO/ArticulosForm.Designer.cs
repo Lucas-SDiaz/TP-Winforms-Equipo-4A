@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.btnAgregarArticulos = new System.Windows.Forms.Button();
-            this.btnImagenes = new System.Windows.Forms.Button();
             this.btnAtras = new System.Windows.Forms.Button();
             this.btnModificarArticulo = new System.Windows.Forms.Button();
             this.btnEliminarArticulo = new System.Windows.Forms.Button();
@@ -47,34 +46,22 @@
             this.btnAgregarArticulos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarArticulos.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarArticulos.ForeColor = System.Drawing.Color.Black;
-            this.btnAgregarArticulos.Location = new System.Drawing.Point(527, 358);
-            this.btnAgregarArticulos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAgregarArticulos.Location = new System.Drawing.Point(703, 441);
+            this.btnAgregarArticulos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAgregarArticulos.Name = "btnAgregarArticulos";
-            this.btnAgregarArticulos.Size = new System.Drawing.Size(134, 50);
+            this.btnAgregarArticulos.Size = new System.Drawing.Size(179, 62);
             this.btnAgregarArticulos.TabIndex = 21;
             this.btnAgregarArticulos.Text = "Agregar artículo";
             this.btnAgregarArticulos.UseVisualStyleBackColor = true;
-            // 
-            // btnImagenes
-            // 
-            this.btnImagenes.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImagenes.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnImagenes.Location = new System.Drawing.Point(378, 278);
-            this.btnImagenes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnImagenes.Name = "btnImagenes";
-            this.btnImagenes.Size = new System.Drawing.Size(134, 35);
-            this.btnImagenes.TabIndex = 20;
-            this.btnImagenes.Text = "Ver imágenes";
-            this.btnImagenes.UseVisualStyleBackColor = true;
             // 
             // btnAtras
             // 
             this.btnAtras.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAtras.ForeColor = System.Drawing.Color.Black;
-            this.btnAtras.Location = new System.Drawing.Point(102, 44);
-            this.btnAtras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAtras.Location = new System.Drawing.Point(136, 54);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(27, 25);
+            this.btnAtras.Size = new System.Drawing.Size(36, 31);
             this.btnAtras.TabIndex = 19;
             this.btnAtras.Text = "<";
             this.btnAtras.UseVisualStyleBackColor = true;
@@ -84,10 +71,10 @@
             // 
             this.btnModificarArticulo.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificarArticulo.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnModificarArticulo.Location = new System.Drawing.Point(240, 278);
-            this.btnModificarArticulo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnModificarArticulo.Location = new System.Drawing.Point(320, 342);
+            this.btnModificarArticulo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnModificarArticulo.Name = "btnModificarArticulo";
-            this.btnModificarArticulo.Size = new System.Drawing.Size(134, 35);
+            this.btnModificarArticulo.Size = new System.Drawing.Size(179, 43);
             this.btnModificarArticulo.TabIndex = 18;
             this.btnModificarArticulo.Text = "Modificar Artículo";
             this.btnModificarArticulo.UseVisualStyleBackColor = true;
@@ -100,10 +87,10 @@
             this.btnEliminarArticulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarArticulo.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarArticulo.ForeColor = System.Drawing.Color.Black;
-            this.btnEliminarArticulo.Location = new System.Drawing.Point(527, 278);
-            this.btnEliminarArticulo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEliminarArticulo.Location = new System.Drawing.Point(703, 342);
+            this.btnEliminarArticulo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEliminarArticulo.Name = "btnEliminarArticulo";
-            this.btnEliminarArticulo.Size = new System.Drawing.Size(134, 35);
+            this.btnEliminarArticulo.Size = new System.Drawing.Size(179, 43);
             this.btnEliminarArticulo.TabIndex = 17;
             this.btnEliminarArticulo.Text = "Eliminar Artículo";
             this.btnEliminarArticulo.UseVisualStyleBackColor = true;
@@ -112,10 +99,10 @@
             // 
             this.btnVerDetalle.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVerDetalle.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnVerDetalle.Location = new System.Drawing.Point(102, 278);
-            this.btnVerDetalle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVerDetalle.Location = new System.Drawing.Point(136, 342);
+            this.btnVerDetalle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnVerDetalle.Name = "btnVerDetalle";
-            this.btnVerDetalle.Size = new System.Drawing.Size(134, 35);
+            this.btnVerDetalle.Size = new System.Drawing.Size(179, 43);
             this.btnVerDetalle.TabIndex = 16;
             this.btnVerDetalle.Text = "Ver Detalle";
             this.btnVerDetalle.UseVisualStyleBackColor = true;
@@ -124,11 +111,11 @@
             // dgvArticulos
             // 
             this.dgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvArticulos.Location = new System.Drawing.Point(102, 109);
-            this.dgvArticulos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvArticulos.Location = new System.Drawing.Point(136, 134);
+            this.dgvArticulos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvArticulos.Name = "dgvArticulos";
             this.dgvArticulos.RowHeadersWidth = 51;
-            this.dgvArticulos.Size = new System.Drawing.Size(559, 144);
+            this.dgvArticulos.Size = new System.Drawing.Size(745, 177);
             this.dgvArticulos.TabIndex = 15;
             // 
             // lblArticulos
@@ -136,29 +123,29 @@
             this.lblArticulos.AutoSize = true;
             this.lblArticulos.Font = new System.Drawing.Font("Microsoft Tai Le", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblArticulos.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.lblArticulos.Location = new System.Drawing.Point(316, 44);
+            this.lblArticulos.Location = new System.Drawing.Point(421, 54);
+            this.lblArticulos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblArticulos.Name = "lblArticulos";
-            this.lblArticulos.Size = new System.Drawing.Size(130, 34);
+            this.lblArticulos.Size = new System.Drawing.Size(157, 43);
             this.lblArticulos.TabIndex = 35;
             this.lblArticulos.Text = "Artículos";
             // 
             // ArticulosForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(825, 488);
+            this.ClientSize = new System.Drawing.Size(1100, 601);
             this.Controls.Add(this.lblArticulos);
             this.Controls.Add(this.btnAgregarArticulos);
-            this.Controls.Add(this.btnImagenes);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.btnModificarArticulo);
             this.Controls.Add(this.btnEliminarArticulo);
             this.Controls.Add(this.btnVerDetalle);
             this.Controls.Add(this.dgvArticulos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.MaximumSize = new System.Drawing.Size(825, 488);
-            this.MinimumSize = new System.Drawing.Size(825, 488);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximumSize = new System.Drawing.Size(1100, 601);
+            this.MinimumSize = new System.Drawing.Size(1100, 601);
             this.Name = "ArticulosForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ArticulosForm";
@@ -171,7 +158,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnAgregarArticulos;
-        private System.Windows.Forms.Button btnImagenes;
         private System.Windows.Forms.Button btnAtras;
         private System.Windows.Forms.Button btnModificarArticulo;
         private System.Windows.Forms.Button btnEliminarArticulo;
