@@ -29,26 +29,119 @@
         private void InitializeComponent()
         {
             this.pbxImagenesArticulo = new System.Windows.Forms.PictureBox();
-            this.btnCerrar = new System.Windows.Forms.Button();
-            this.btnImgAnterior = new System.Windows.Forms.Button();
-            this.btnImgSiguiente = new System.Windows.Forms.Button();
             this.lblCodigoArticulo = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblDescripcionArt = new System.Windows.Forms.Label();
             this.lblMarca = new System.Windows.Forms.Label();
             this.lblPrecio = new System.Windows.Forms.Label();
             this.lblCategoria = new System.Windows.Forms.Label();
+            this.btnAnterior = new System.Windows.Forms.Button();
+            this.btnSiguiente = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbxImagenesArticulo)).BeginInit();
             this.SuspendLayout();
             // 
             // pbxImagenesArticulo
             // 
-            this.pbxImagenesArticulo.Location = new System.Drawing.Point(433, 83);
-            this.pbxImagenesArticulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbxImagenesArticulo.Location = new System.Drawing.Point(456, 78);
+            this.pbxImagenesArticulo.Margin = new System.Windows.Forms.Padding(4);
             this.pbxImagenesArticulo.Name = "pbxImagenesArticulo";
-            this.pbxImagenesArticulo.Size = new System.Drawing.Size(275, 275);
+            this.pbxImagenesArticulo.Size = new System.Drawing.Size(250, 250);
             this.pbxImagenesArticulo.TabIndex = 0;
             this.pbxImagenesArticulo.TabStop = false;
+            // 
+            // lblCodigoArticulo
+            // 
+            this.lblCodigoArticulo.AutoSize = true;
+            this.lblCodigoArticulo.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigoArticulo.Location = new System.Drawing.Point(43, 96);
+            this.lblCodigoArticulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCodigoArticulo.Name = "lblCodigoArticulo";
+            this.lblCodigoArticulo.Size = new System.Drawing.Size(137, 18);
+            this.lblCodigoArticulo.TabIndex = 21;
+            this.lblCodigoArticulo.Text = "Código de artículo:";
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(43, 156);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(72, 18);
+            this.lblNombre.TabIndex = 22;
+            this.lblNombre.Text = "Nombre: ";
+            // 
+            // lblDescripcionArt
+            // 
+            this.lblDescripcionArt.AutoSize = true;
+            this.lblDescripcionArt.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcionArt.Location = new System.Drawing.Point(43, 276);
+            this.lblDescripcionArt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDescripcionArt.Name = "lblDescripcionArt";
+            this.lblDescripcionArt.Size = new System.Drawing.Size(90, 18);
+            this.lblDescripcionArt.TabIndex = 23;
+            this.lblDescripcionArt.Text = "Descripción:";
+            // 
+            // lblMarca
+            // 
+            this.lblMarca.AutoSize = true;
+            this.lblMarca.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMarca.Location = new System.Drawing.Point(43, 216);
+            this.lblMarca.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMarca.Name = "lblMarca";
+            this.lblMarca.Size = new System.Drawing.Size(54, 18);
+            this.lblMarca.TabIndex = 24;
+            this.lblMarca.Text = "Marca:";
+            // 
+            // lblPrecio
+            // 
+            this.lblPrecio.AutoSize = true;
+            this.lblPrecio.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecio.Location = new System.Drawing.Point(453, 407);
+            this.lblPrecio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPrecio.Name = "lblPrecio";
+            this.lblPrecio.Size = new System.Drawing.Size(59, 18);
+            this.lblPrecio.TabIndex = 25;
+            this.lblPrecio.Text = "Precio: ";
+            this.lblPrecio.Click += new System.EventHandler(this.lblPrecio_Click);
+            // 
+            // lblCategoria
+            // 
+            this.lblCategoria.AutoSize = true;
+            this.lblCategoria.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategoria.Location = new System.Drawing.Point(43, 336);
+            this.lblCategoria.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCategoria.Name = "lblCategoria";
+            this.lblCategoria.Size = new System.Drawing.Size(78, 18);
+            this.lblCategoria.TabIndex = 26;
+            this.lblCategoria.Text = "Categoría:";
+            // 
+            // btnAnterior
+            // 
+            this.btnAnterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnterior.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnterior.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnAnterior.Location = new System.Drawing.Point(456, 338);
+            this.btnAnterior.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAnterior.Name = "btnAnterior";
+            this.btnAnterior.Size = new System.Drawing.Size(119, 35);
+            this.btnAnterior.TabIndex = 27;
+            this.btnAnterior.Text = "Anterior";
+            this.btnAnterior.UseVisualStyleBackColor = true;
+            // 
+            // btnSiguiente
+            // 
+            this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSiguiente.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnSiguiente.Location = new System.Drawing.Point(587, 338);
+            this.btnSiguiente.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSiguiente.Name = "btnSiguiente";
+            this.btnSiguiente.Size = new System.Drawing.Size(119, 35);
+            this.btnSiguiente.TabIndex = 28;
+            this.btnSiguiente.Text = "Siguiente";
+            this.btnSiguiente.UseVisualStyleBackColor = true;
             // 
             // btnCerrar
             // 
@@ -60,120 +153,32 @@
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.ForeColor = System.Drawing.Color.Transparent;
-            this.btnCerrar.Location = new System.Drawing.Point(756, 14);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnCerrar.Location = new System.Drawing.Point(780, 12);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(55, 42);
-            this.btnCerrar.TabIndex = 18;
+            this.btnCerrar.Size = new System.Drawing.Size(33, 28);
+            this.btnCerrar.TabIndex = 29;
             this.btnCerrar.Text = "X";
             this.btnCerrar.UseVisualStyleBackColor = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // btnImgAnterior
-            // 
-            this.btnImgAnterior.Location = new System.Drawing.Point(433, 383);
-            this.btnImgAnterior.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnImgAnterior.Name = "btnImgAnterior";
-            this.btnImgAnterior.Size = new System.Drawing.Size(110, 35);
-            this.btnImgAnterior.TabIndex = 19;
-            this.btnImgAnterior.Text = "anterior";
-            this.btnImgAnterior.UseVisualStyleBackColor = true;
-            // 
-            // btnImgSiguiente
-            // 
-            this.btnImgSiguiente.Location = new System.Drawing.Point(598, 383);
-            this.btnImgSiguiente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnImgSiguiente.Name = "btnImgSiguiente";
-            this.btnImgSiguiente.Size = new System.Drawing.Size(110, 35);
-            this.btnImgSiguiente.TabIndex = 20;
-            this.btnImgSiguiente.Text = "siguiente";
-            this.btnImgSiguiente.UseVisualStyleBackColor = true;
-            // 
-            // lblCodigoArticulo
-            // 
-            this.lblCodigoArticulo.AutoSize = true;
-            this.lblCodigoArticulo.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigoArticulo.Location = new System.Drawing.Point(13, 96);
-            this.lblCodigoArticulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblCodigoArticulo.Name = "lblCodigoArticulo";
-            this.lblCodigoArticulo.Size = new System.Drawing.Size(164, 22);
-            this.lblCodigoArticulo.TabIndex = 21;
-            this.lblCodigoArticulo.Text = "Código de artículo:";
-            // 
-            // lblNombre
-            // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(13, 156);
-            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(86, 22);
-            this.lblNombre.TabIndex = 22;
-            this.lblNombre.Text = "Nombre: ";
-            // 
-            // lblDescripcionArt
-            // 
-            this.lblDescripcionArt.AutoSize = true;
-            this.lblDescripcionArt.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcionArt.Location = new System.Drawing.Point(13, 276);
-            this.lblDescripcionArt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblDescripcionArt.Name = "lblDescripcionArt";
-            this.lblDescripcionArt.Size = new System.Drawing.Size(108, 22);
-            this.lblDescripcionArt.TabIndex = 23;
-            this.lblDescripcionArt.Text = "Descripción:";
-            // 
-            // lblMarca
-            // 
-            this.lblMarca.AutoSize = true;
-            this.lblMarca.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarca.Location = new System.Drawing.Point(13, 216);
-            this.lblMarca.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(64, 22);
-            this.lblMarca.TabIndex = 24;
-            this.lblMarca.Text = "Marca:";
-            // 
-            // lblPrecio
-            // 
-            this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecio.Location = new System.Drawing.Point(429, 445);
-            this.lblPrecio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(69, 22);
-            this.lblPrecio.TabIndex = 25;
-            this.lblPrecio.Text = "Precio: ";
-            this.lblPrecio.Click += new System.EventHandler(this.lblPrecio_Click);
-            // 
-            // lblCategoria
-            // 
-            this.lblCategoria.AutoSize = true;
-            this.lblCategoria.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategoria.Location = new System.Drawing.Point(13, 336);
-            this.lblCategoria.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(93, 22);
-            this.lblCategoria.TabIndex = 26;
-            this.lblCategoria.Text = "Categoría:";
-            // 
             // DetalleArticuloFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(825, 488);
+            this.Controls.Add(this.btnCerrar);
+            this.Controls.Add(this.btnSiguiente);
+            this.Controls.Add(this.btnAnterior);
             this.Controls.Add(this.lblCategoria);
             this.Controls.Add(this.lblPrecio);
             this.Controls.Add(this.lblMarca);
             this.Controls.Add(this.lblDescripcionArt);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblCodigoArticulo);
-            this.Controls.Add(this.btnImgSiguiente);
-            this.Controls.Add(this.btnImgAnterior);
-            this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.pbxImagenesArticulo);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DetalleArticuloFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "DetalleArticuloFrm";
@@ -186,14 +191,14 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pbxImagenesArticulo;
-        private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.Button btnImgAnterior;
-        private System.Windows.Forms.Button btnImgSiguiente;
         private System.Windows.Forms.Label lblCodigoArticulo;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblDescripcionArt;
         private System.Windows.Forms.Label lblMarca;
         private System.Windows.Forms.Label lblPrecio;
         private System.Windows.Forms.Label lblCategoria;
+        private System.Windows.Forms.Button btnAnterior;
+        private System.Windows.Forms.Button btnSiguiente;
+        private System.Windows.Forms.Button btnCerrar;
     }
 }

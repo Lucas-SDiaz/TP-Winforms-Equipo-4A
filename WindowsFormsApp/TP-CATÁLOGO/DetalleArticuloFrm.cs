@@ -17,14 +17,14 @@ namespace TP_CATÁLOGO
             InitializeComponent();
         }
 
-        private void btnCerrar_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
         private void lblPrecio_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
