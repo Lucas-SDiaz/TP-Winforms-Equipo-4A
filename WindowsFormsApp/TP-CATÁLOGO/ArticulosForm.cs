@@ -27,5 +27,15 @@ namespace TP_CATÁLOGO
             DetalleArticuloFrm ventanaDetalleArticulo = new DetalleArticuloFrm();
             ventanaDetalleArticulo.ShowDialog();
         }
+
+        private void ArticulosForm_Load(object sender, EventArgs e)
+        {
+            ArticuloNegocio negocio  = new ArticuloNegocio();
+            dgvArticulos.DataSource = negocio.listar();
+            dgvArticulos.Columns["Id"].Visible = false;
+            dgvArticulos.Columns["Precio"].Visible = false;
+            dgvArticulos.Columns["Descripcion"].Visible=false;
+
+        }
     }
 }

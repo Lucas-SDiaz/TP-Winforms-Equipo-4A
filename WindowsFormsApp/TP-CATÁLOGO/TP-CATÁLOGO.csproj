@@ -59,6 +59,7 @@
       <DependentUpon>AgregarMarcaFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Articulo.cs" />
+    <Compile Include="ArticuloNegocio.cs" />
     <Compile Include="ArticulosForm.cs">
       <SubType>Form</SubType>
     </Compile>

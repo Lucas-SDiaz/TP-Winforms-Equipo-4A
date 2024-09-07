@@ -11,5 +11,9 @@ namespace TP_CATÁLOGO
         public int ID_Marca { get; set; }
         public string Descripcion { get; set; }
         public Marca() { }
+        public override string ToString()
+        {
+            return Descripcion;
+        }
     }
 }
