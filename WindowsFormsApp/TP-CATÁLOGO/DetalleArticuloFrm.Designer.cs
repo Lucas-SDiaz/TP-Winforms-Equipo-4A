@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.pbxImagenesArticulo = new System.Windows.Forms.PictureBox();
-            this.lblCodigoArticulo = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblDescripcionArt = new System.Windows.Forms.Label();
             this.lblMarca = new System.Windows.Forms.Label();
@@ -47,61 +46,54 @@
             this.pbxImagenesArticulo.Margin = new System.Windows.Forms.Padding(4);
             this.pbxImagenesArticulo.Name = "pbxImagenesArticulo";
             this.pbxImagenesArticulo.Size = new System.Drawing.Size(250, 250);
+            this.pbxImagenesArticulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxImagenesArticulo.TabIndex = 0;
             this.pbxImagenesArticulo.TabStop = false;
-            // 
-            // lblCodigoArticulo
-            // 
-            this.lblCodigoArticulo.AutoSize = true;
-            this.lblCodigoArticulo.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigoArticulo.Location = new System.Drawing.Point(43, 96);
-            this.lblCodigoArticulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblCodigoArticulo.Name = "lblCodigoArticulo";
-            this.lblCodigoArticulo.Size = new System.Drawing.Size(137, 18);
-            this.lblCodigoArticulo.TabIndex = 21;
-            this.lblCodigoArticulo.Text = "Código de artículo:";
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(43, 156);
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblNombre.Location = new System.Drawing.Point(43, 183);
             this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(72, 18);
+            this.lblNombre.Size = new System.Drawing.Size(94, 23);
             this.lblNombre.TabIndex = 22;
             this.lblNombre.Text = "Nombre: ";
             // 
             // lblDescripcionArt
             // 
             this.lblDescripcionArt.AutoSize = true;
-            this.lblDescripcionArt.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcionArt.Location = new System.Drawing.Point(43, 276);
+            this.lblDescripcionArt.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcionArt.Location = new System.Drawing.Point(29, 262);
             this.lblDescripcionArt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDescripcionArt.Name = "lblDescripcionArt";
-            this.lblDescripcionArt.Size = new System.Drawing.Size(90, 18);
+            this.lblDescripcionArt.Size = new System.Drawing.Size(108, 21);
             this.lblDescripcionArt.TabIndex = 23;
-            this.lblDescripcionArt.Text = "Descripción:";
+            this.lblDescripcionArt.Text = "Descripción: ";
             // 
             // lblMarca
             // 
             this.lblMarca.AutoSize = true;
             this.lblMarca.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarca.Location = new System.Drawing.Point(43, 216);
+            this.lblMarca.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.lblMarca.Location = new System.Drawing.Point(228, 78);
             this.lblMarca.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(54, 18);
+            this.lblMarca.Size = new System.Drawing.Size(58, 18);
             this.lblMarca.TabIndex = 24;
-            this.lblMarca.Text = "Marca:";
+            this.lblMarca.Text = "Marca: ";
             // 
             // lblPrecio
             // 
             this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecio.Location = new System.Drawing.Point(453, 407);
+            this.lblPrecio.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecio.ForeColor = System.Drawing.Color.Red;
+            this.lblPrecio.Location = new System.Drawing.Point(452, 407);
             this.lblPrecio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(59, 18);
+            this.lblPrecio.Size = new System.Drawing.Size(76, 23);
             this.lblPrecio.TabIndex = 25;
             this.lblPrecio.Text = "Precio: ";
             this.lblPrecio.Click += new System.EventHandler(this.lblPrecio_Click);
@@ -110,12 +102,13 @@
             // 
             this.lblCategoria.AutoSize = true;
             this.lblCategoria.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategoria.Location = new System.Drawing.Point(43, 336);
+            this.lblCategoria.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.lblCategoria.Location = new System.Drawing.Point(55, 78);
             this.lblCategoria.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(78, 18);
+            this.lblCategoria.Size = new System.Drawing.Size(82, 18);
             this.lblCategoria.TabIndex = 26;
-            this.lblCategoria.Text = "Categoría:";
+            this.lblCategoria.Text = "Categoría: ";
             // 
             // btnAnterior
             // 
@@ -129,6 +122,7 @@
             this.btnAnterior.TabIndex = 27;
             this.btnAnterior.Text = "Anterior";
             this.btnAnterior.UseVisualStyleBackColor = true;
+            this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click);
             // 
             // btnSiguiente
             // 
@@ -142,6 +136,7 @@
             this.btnSiguiente.TabIndex = 28;
             this.btnSiguiente.Text = "Siguiente";
             this.btnSiguiente.UseVisualStyleBackColor = true;
+            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
             // btnCerrar
             // 
@@ -174,7 +169,6 @@
             this.Controls.Add(this.lblMarca);
             this.Controls.Add(this.lblDescripcionArt);
             this.Controls.Add(this.lblNombre);
-            this.Controls.Add(this.lblCodigoArticulo);
             this.Controls.Add(this.pbxImagenesArticulo);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -182,6 +176,7 @@
             this.Name = "DetalleArticuloFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "DetalleArticuloFrm";
+            this.Load += new System.EventHandler(this.DetalleArticuloFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxImagenesArticulo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -191,7 +186,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pbxImagenesArticulo;
-        private System.Windows.Forms.Label lblCodigoArticulo;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblDescripcionArt;
         private System.Windows.Forms.Label lblMarca;

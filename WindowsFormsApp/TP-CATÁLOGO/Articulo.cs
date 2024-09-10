@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TP_CATÁLOGO
 {
-    internal class Articulo
+    public class Articulo
     {
         public int Id { get; set; }
         public string CodigoArticulo { get; set; }

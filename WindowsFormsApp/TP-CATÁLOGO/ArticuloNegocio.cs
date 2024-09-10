@@ -10,12 +10,13 @@ namespace TP_CATÁLOGO
 {
     internal class ArticuloNegocio
     {
+        SqlConnection conexion = new SqlConnection();
+        SqlCommand comando = new SqlCommand();
+        SqlDataReader lector;
         public List<Articulo> listar()
         {
             List<Articulo> lista = new List<Articulo>();
-            SqlConnection conexion = new SqlConnection();
-            SqlCommand comando = new SqlCommand();
-            SqlDataReader lector;
+            
 
 
             try
@@ -46,6 +47,40 @@ namespace TP_CATÁLOGO
 
             conexion.Close();
             return lista;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+        public List<Imagen> listaImagenesXArt(Articulo art)
+        {
+            List<Imagen> lista = new List<Imagen>();
+
+            try
+            {
+                conexion.ConnectionString = "server=.\\SQLEXPRESS; database=CATALOGO_P3_DB; integrated security=true; ";
+                comando.CommandType = System.Data.CommandType.Text;
+                comando.CommandText = "SELECT id, IdArticulo, ImagenUrl FROM IMAGENES WHERE IdArticulo = " + art.Id;
+                comando.Connection = conexion;
+
+                conexion.Open();
+                lector = comando.ExecuteReader();
+
+                while (lector.Read())
+                {
+                    Imagen imagen = new Imagen();
+                    imagen.ID_Imagen = lector.GetInt32(0);
+                    imagen.ID_Art = lector.GetInt32(1);
+                    imagen.Url = (string)lector["ImagenUrl"];
+                 
+
+                    lista.Add(imagen);
+                }
+
+                conexion.Close();
+                return lista;
             }
             catch (Exception ex)
             {

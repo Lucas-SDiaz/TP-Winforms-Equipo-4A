@@ -24,7 +24,14 @@ namespace TP_CATÁLOGO
 
         private void btnVerDetalle_Click(object sender, EventArgs e)
         {
-            DetalleArticuloFrm ventanaDetalleArticulo = new DetalleArticuloFrm();
+            ArticuloNegocio negocio = new ArticuloNegocio();
+            Articulo selected;
+            selected = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            List<Imagen> lista = new List<Imagen>();
+            lista = negocio.listaImagenesXArt(selected);
+     
+
+            DetalleArticuloFrm ventanaDetalleArticulo = new DetalleArticuloFrm(selected, lista);
             ventanaDetalleArticulo.ShowDialog();
         }
 
