@@ -19,6 +19,8 @@ namespace TP_CATÁLOGO
 
         private void btnAgregar_Click_1(object sender, EventArgs e)
         {
+            //Función para agregar nueva marca
+
             Close();
         }
 

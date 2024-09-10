@@ -19,6 +19,8 @@ namespace TP_CATÁLOGO
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            //Agregar categoría al listado
+
             Close();
         }
 
