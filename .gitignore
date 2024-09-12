@@ -396,3 +396,4 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+WindowsFormsApp/TP-CATÁLOGO/obj/Debug/TP-CATÁLOGO.csproj.GenerateResource.cache
