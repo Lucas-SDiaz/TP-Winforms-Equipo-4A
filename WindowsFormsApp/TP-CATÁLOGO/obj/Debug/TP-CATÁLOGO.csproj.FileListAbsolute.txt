@@ -63,3 +63,4 @@ C:\Users\carde\source\repos\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\o
 C:\Users\carde\source\repos\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP-CATÁLOGO.csproj.CoreCompileInputs.cache
 C:\Users\carde\source\repos\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP-CATÁLOGO.exe
 C:\Users\carde\source\repos\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP-CATÁLOGO.pdb
+C:\Users\Jesica\Desktop\UTN\2024 Progamación III\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP_CATÁLOGO.AgregarArticulo.resources

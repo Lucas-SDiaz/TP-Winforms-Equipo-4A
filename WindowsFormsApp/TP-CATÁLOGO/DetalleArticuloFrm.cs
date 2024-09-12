@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -45,9 +46,20 @@ namespace TP_CATÁLOGO
             lblPrecio.Text =         "Precio:            $" + articulo.Precio;
             lblDescripcionArt.Text = "Descripción: " + articulo.Descripcion;
             lblNombre.Text =         "Nombre: " + articulo.Nombre;
-            pbxImagenesArticulo.Load(imagenes[0].Url);
+            CargarImagen(imagenes[0].Url);
         }
+        private void CargarImagen(string imagenes)
+        {
+            try
+            {
+                pbxImagenesArticulo.Load(imagenes);
+            }
+            catch(Exception)
+            {
+                pbxImagenesArticulo.Load("https://media.istockphoto.com/id/1128826884/es/vector/ning%C3%BAn-s%C3%ADmbolo-de-vector-de-imagen-falta-icono-disponible-no-hay-galer%C3%ADa-para-este-momento.jpg?s=612x612&w=0&k=20&c=9vnjI4XI3XQC0VHfuDePO7vNJE7WDM8uzQmZJ1SnQgk=");
+            }
 
+        }
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
             int max = imagenes.Count;
