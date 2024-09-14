@@ -30,21 +30,21 @@
         {
             this.btnModificarCategoria = new System.Windows.Forms.Button();
             this.btnEliminarCategoria = new System.Windows.Forms.Button();
-            this.dgvArticulos = new System.Windows.Forms.DataGridView();
+            this.dgvCategorias = new System.Windows.Forms.DataGridView();
             this.btnAgregarCategoría = new System.Windows.Forms.Button();
             this.btnAtras = new System.Windows.Forms.Button();
             this.lblCategorias = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCategorias)).BeginInit();
             this.SuspendLayout();
             // 
             // btnModificarCategoria
             // 
             this.btnModificarCategoria.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificarCategoria.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnModificarCategoria.Location = new System.Drawing.Point(140, 370);
+            this.btnModificarCategoria.Location = new System.Drawing.Point(382, 355);
             this.btnModificarCategoria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnModificarCategoria.Name = "btnModificarCategoria";
-            this.btnModificarCategoria.Size = new System.Drawing.Size(165, 42);
+            this.btnModificarCategoria.Size = new System.Drawing.Size(184, 42);
             this.btnModificarCategoria.TabIndex = 33;
             this.btnModificarCategoria.Text = "Modificar categoría";
             this.btnModificarCategoria.UseVisualStyleBackColor = true;
@@ -57,23 +57,23 @@
             this.btnEliminarCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarCategoria.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarCategoria.ForeColor = System.Drawing.Color.Black;
-            this.btnEliminarCategoria.Location = new System.Drawing.Point(695, 369);
+            this.btnEliminarCategoria.Location = new System.Drawing.Point(597, 354);
             this.btnEliminarCategoria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEliminarCategoria.Name = "btnEliminarCategoria";
-            this.btnEliminarCategoria.Size = new System.Drawing.Size(191, 42);
+            this.btnEliminarCategoria.Size = new System.Drawing.Size(184, 42);
             this.btnEliminarCategoria.TabIndex = 32;
             this.btnEliminarCategoria.Text = "Eliminar categoría";
             this.btnEliminarCategoria.UseVisualStyleBackColor = true;
             // 
-            // dgvArticulos
+            // dgvCategorias
             // 
-            this.dgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvArticulos.Location = new System.Drawing.Point(140, 156);
-            this.dgvArticulos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dgvArticulos.Name = "dgvArticulos";
-            this.dgvArticulos.RowHeadersWidth = 51;
-            this.dgvArticulos.Size = new System.Drawing.Size(745, 177);
-            this.dgvArticulos.TabIndex = 31;
+            this.dgvCategorias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCategorias.Location = new System.Drawing.Point(382, 156);
+            this.dgvCategorias.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvCategorias.Name = "dgvCategorias";
+            this.dgvCategorias.RowHeadersWidth = 51;
+            this.dgvCategorias.Size = new System.Drawing.Size(399, 177);
+            this.dgvCategorias.TabIndex = 31;
             // 
             // btnAgregarCategoría
             // 
@@ -83,7 +83,7 @@
             this.btnAgregarCategoría.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarCategoría.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarCategoría.ForeColor = System.Drawing.Color.Black;
-            this.btnAgregarCategoría.Location = new System.Drawing.Point(695, 450);
+            this.btnAgregarCategoría.Location = new System.Drawing.Point(490, 436);
             this.btnAgregarCategoría.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAgregarCategoría.Name = "btnAgregarCategoría";
             this.btnAgregarCategoría.Size = new System.Drawing.Size(191, 62);
@@ -125,15 +125,16 @@
             this.Controls.Add(this.lblCategorias);
             this.Controls.Add(this.btnModificarCategoria);
             this.Controls.Add(this.btnEliminarCategoria);
-            this.Controls.Add(this.dgvArticulos);
+            this.Controls.Add(this.dgvCategorias);
             this.Controls.Add(this.btnAgregarCategoría);
             this.Controls.Add(this.btnAtras);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CategoriasForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CategoriasForm";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).EndInit();
+            this.Load += new System.EventHandler(this.CategoriasForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCategorias)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -143,7 +144,7 @@
 
         private System.Windows.Forms.Button btnModificarCategoria;
         private System.Windows.Forms.Button btnEliminarCategoria;
-        private System.Windows.Forms.DataGridView dgvArticulos;
+        private System.Windows.Forms.DataGridView dgvCategorias;
         private System.Windows.Forms.Button btnAgregarCategoría;
         private System.Windows.Forms.Button btnAtras;
         private System.Windows.Forms.Label lblCategorias;

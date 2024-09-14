@@ -33,11 +33,10 @@ namespace Negocio
         public void ejecutarLectura()
         {
             comando.Connection = conexion;
-            conexion.Open();
-            lector = comando.ExecuteReader();
             try
             {
-
+                conexion.Open();
+                lector = comando.ExecuteReader();
             }
             catch (Exception ex)
             {
@@ -50,9 +49,22 @@ namespace Negocio
         {
             if(lector!= null)
                 lector.Close();
-            conexion.Close();
-           
+            conexion.Close();          
+        }
 
+        public void ejecutarAccion()
+        {
+            comando.Connection = conexion;
+            try
+            {
+                conexion.Open();
+                comando.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
         }
     }
 }

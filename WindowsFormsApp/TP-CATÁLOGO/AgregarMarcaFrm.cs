@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Negocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,11 +8,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Dominio;
 
 namespace TP_CATÁLOGO
 {
     public partial class AgregarMarcaFrm : Form
     {
+        MarcaNegocio negocio = new MarcaNegocio();
         public AgregarMarcaFrm()
         {
             InitializeComponent();
@@ -19,8 +22,10 @@ namespace TP_CATÁLOGO
 
         private void btnAgregar_Click_1(object sender, EventArgs e)
         {
-            //Función para agregar nueva marca
-
+            Marca aux = new Marca();
+            aux.Descripcion = txtNuevaMarca.Text;
+            MessageBox.Show("Marca agregada exitosamente!");
+            negocio.agregar(aux);
             Close();
         }
 
