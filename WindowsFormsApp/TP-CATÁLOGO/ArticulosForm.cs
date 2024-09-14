@@ -53,6 +53,13 @@ namespace TP_CATÁLOGO
             {
                 MessageBox.Show(ex.ToString());
             }
+            //Carga de los campos del desplegable para búsqueda avanzada.
+            cboCampo.Items.Add("CodigoArticulo");
+            cboCampo.Items.Add("Nombre");
+            cboCampo.Items.Add("Marca");
+            cboCampo.Items.Add("Categoría");
+
+
         }
 
         private void ocultarColumnas()
@@ -80,6 +87,32 @@ namespace TP_CATÁLOGO
                 dgvArticulos.DataSource = null;
                 dgvArticulos.DataSource = listaFiltrada;
                 ocultarColumnas();   
+        }
+
+        private void cboCampo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string opcion = cboCampo.SelectedItem.ToString();
+            if (opcion == "CodigoArticulo")
+            {
+                cboCriterio.Items.Clear();
+                cboCriterio.Items.Add("Contiene ");
+            }
+            else
+            {
+                cboCriterio.Items.Clear();
+                cboCriterio.Items.Add("Comienza con ");
+                cboCriterio.Items.Add("Termina con ");
+                cboCriterio.Items.Add("Contiene ");
+            }
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            ArticuloNegocio negocio = new ArticuloNegocio();
+            string campo = cboCampo.SelectedItem.ToString();
+            string criterio = cboCriterio.SelectedItem.ToString();
+            string filtro = txtFiltroAvanzado.Text;
+            dgvArticulos.DataSource = negocio.filtrar(campo, criterio, filtro);
         }
     }
 }
