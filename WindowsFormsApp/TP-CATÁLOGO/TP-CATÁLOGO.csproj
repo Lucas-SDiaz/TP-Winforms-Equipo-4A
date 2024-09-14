@@ -64,15 +64,12 @@
     <Compile Include="AgregarMarcaFrm.Designer.cs">
       <DependentUpon>AgregarMarcaFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Articulo.cs" />
-    <Compile Include="ArticuloNegocio.cs" />
     <Compile Include="ArticulosForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ArticulosForm.Designer.cs">
       <DependentUpon>ArticulosForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Categoria.cs" />
     <Compile Include="CategoriasForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,14 +82,12 @@
     <Compile Include="DetalleArticuloFrm.Designer.cs">
       <DependentUpon>DetalleArticuloFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Imagen.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Marca.cs" />
     <Compile Include="MarcasForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +141,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dominio\Dominio.csproj">
+      <Project>{61853fe0-75fe-442f-9931-7eaba95aef24}</Project>
+      <Name>Dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{8bbd6af6-eb39-47ef-aebf-128e18e8b803}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

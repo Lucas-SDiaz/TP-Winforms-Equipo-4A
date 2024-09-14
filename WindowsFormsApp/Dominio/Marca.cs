@@ -4,14 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TP_CATÁLOGO
+namespace Dominio
 {
-    public class Categoria
+    public class Marca
     {
-        public int ID_Categoria { get; set; }
+        public int ID_Marca { get; set; }
         public string Descripcion { get; set; }
-        public Categoria() { }
-
+        public Marca() { }
         public override string ToString()
         {
             return Descripcion;
