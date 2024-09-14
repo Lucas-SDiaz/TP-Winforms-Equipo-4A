@@ -13,11 +13,11 @@ namespace TP_CATÁLOGO
 {
     public partial class DetalleArticuloFrm : Form
     {
+        private List<Articulo> listaArticulo;
         private Articulo articulo = null;
         private List<Imagen> imagenes = null;
         int index = 0;
          
-
         public DetalleArticuloFrm()
         {
             InitializeComponent();
@@ -68,7 +68,7 @@ namespace TP_CATÁLOGO
             else
             {
                 index ++;
-                pbxImagenesArticulo.Load(imagenes[index].Url);
+                CargarImagen(imagenes[index].Url);
             }
         }
 
@@ -79,7 +79,7 @@ namespace TP_CATÁLOGO
             else
             {
                 index --;
-                pbxImagenesArticulo.Load(imagenes[index].Url);
+                CargarImagen(imagenes[index].Url);
             }
 
 
