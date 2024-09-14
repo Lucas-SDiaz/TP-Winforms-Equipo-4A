@@ -63,7 +63,7 @@ namespace TP_CATÁLOGO
 
         private void txtFiltro_TextChanged(object sender, EventArgs e)
         { 
-                List<Articulo> listaFiltrada;
+            List<Articulo> listaFiltrada;
             string filtro = txtFiltro.Text;
 
             if (filtro != "")
