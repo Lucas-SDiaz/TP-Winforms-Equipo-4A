@@ -8,12 +8,12 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Dominio;
 
 namespace TP_CATÁLOGO
 {
     public partial class DetalleArticuloFrm : Form
     {
-        private List<Articulo> listaArticulo;
         private Articulo articulo = null;
         private List<Imagen> imagenes = null;
         int index = 0;

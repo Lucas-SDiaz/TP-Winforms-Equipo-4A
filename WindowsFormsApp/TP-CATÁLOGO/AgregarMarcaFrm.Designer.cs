@@ -30,8 +30,8 @@
         {
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtNuevaMarca = new System.Windows.Forms.TextBox();
+            this.lblNuevaMarca = new System.Windows.Forms.Label();
             this.lblAgregueNuevaMarca = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -39,9 +39,10 @@
             // 
             this.btnSalir.BackColor = System.Drawing.Color.LightGray;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Location = new System.Drawing.Point(163, 109);
+            this.btnSalir.Location = new System.Drawing.Point(217, 134);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 27);
+            this.btnSalir.Size = new System.Drawing.Size(100, 33);
             this.btnSalir.TabIndex = 0;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -54,52 +55,57 @@
             this.btnAgregar.FlatAppearance.BorderSize = 2;
             this.btnAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregar.Location = new System.Drawing.Point(244, 109);
+            this.btnAgregar.Location = new System.Drawing.Point(325, 134);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(118, 27);
+            this.btnAgregar.Size = new System.Drawing.Size(157, 33);
             this.btnAgregar.TabIndex = 1;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click_1);
             // 
-            // textBox1
+            // txtNuevaMarca
             // 
-            this.textBox1.Location = new System.Drawing.Point(163, 68);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(199, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtNuevaMarca.Location = new System.Drawing.Point(217, 84);
+            this.txtNuevaMarca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNuevaMarca.Name = "txtNuevaMarca";
+            this.txtNuevaMarca.Size = new System.Drawing.Size(264, 22);
+            this.txtNuevaMarca.TabIndex = 2;
             // 
-            // label1
+            // lblNuevaMarca
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(28, 68);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Nombre de marca:";
+            this.lblNuevaMarca.AutoSize = true;
+            this.lblNuevaMarca.Location = new System.Drawing.Point(37, 84);
+            this.lblNuevaMarca.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNuevaMarca.Name = "lblNuevaMarca";
+            this.lblNuevaMarca.Size = new System.Drawing.Size(119, 16);
+            this.lblNuevaMarca.TabIndex = 3;
+            this.lblNuevaMarca.Text = "Nombre de marca:";
             // 
             // lblAgregueNuevaMarca
             // 
             this.lblAgregueNuevaMarca.AutoSize = true;
             this.lblAgregueNuevaMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgregueNuevaMarca.Location = new System.Drawing.Point(28, 32);
+            this.lblAgregueNuevaMarca.Location = new System.Drawing.Point(37, 39);
+            this.lblAgregueNuevaMarca.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAgregueNuevaMarca.Name = "lblAgregueNuevaMarca";
-            this.lblAgregueNuevaMarca.Size = new System.Drawing.Size(202, 18);
+            this.lblAgregueNuevaMarca.Size = new System.Drawing.Size(258, 24);
             this.lblAgregueNuevaMarca.TabIndex = 4;
             this.lblAgregueNuevaMarca.Text = "Agregue una nueva marca";
             // 
             // AgregarMarcaFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.ClientSize = new System.Drawing.Size(416, 187);
+            this.ClientSize = new System.Drawing.Size(555, 230);
             this.Controls.Add(this.lblAgregueNuevaMarca);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lblNuevaMarca);
+            this.Controls.Add(this.txtNuevaMarca);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnSalir);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AgregarMarcaFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "AgregarMarcaFrm";
@@ -112,8 +118,8 @@
 
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtNuevaMarca;
+        private System.Windows.Forms.Label lblNuevaMarca;
         private System.Windows.Forms.Label lblAgregueNuevaMarca;
     }
 }

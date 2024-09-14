@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Dominio;
+using Negocio;
 
 namespace TP_CATÁLOGO
 {
     public partial class MarcasForm : Form
     {
+        private List<Marca> listaMarcas;
         public MarcasForm()
         {
             InitializeComponent();
@@ -31,6 +34,22 @@ namespace TP_CATÁLOGO
         {
             AgregarMarcaFrm ventanaAgregarMarca = new AgregarMarcaFrm();
             ventanaAgregarMarca.ShowDialog();
+        }
+
+        private void MarcasForm_Load(object sender, EventArgs e)
+        {
+            MarcaNegocio negocio = new MarcaNegocio();
+            try
+            {
+                listaMarcas = negocio.listar();
+                dgvMarcas.DataSource = listaMarcas;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
         }
     }
 }
