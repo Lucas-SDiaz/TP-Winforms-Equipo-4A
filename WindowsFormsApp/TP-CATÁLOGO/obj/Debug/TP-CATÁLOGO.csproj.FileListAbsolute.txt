@@ -70,3 +70,8 @@ C:\Users\lucas\OneDrive\Escritorio\GitHub\TP-Winforms-Equipo-4A\WindowsFormsApp\
 C:\Users\lucas\OneDrive\Escritorio\GitHub\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\bin\Debug\Dominio.pdb
 C:\Users\lucas\OneDrive\Escritorio\GitHub\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\bin\Debug\Negocio.pdb
 C:\Users\lucas\OneDrive\Escritorio\GitHub\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP-CATÁL.F78A59A7.Up2Date
+C:\Users\Jesica\Desktop\UTN\2024 Progamación III\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\bin\Debug\Dominio.dll
+C:\Users\Jesica\Desktop\UTN\2024 Progamación III\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\bin\Debug\Negocio.dll
+C:\Users\Jesica\Desktop\UTN\2024 Progamación III\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\bin\Debug\Dominio.pdb
+C:\Users\Jesica\Desktop\UTN\2024 Progamación III\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\bin\Debug\Negocio.pdb
+C:\Users\Jesica\Desktop\UTN\2024 Progamación III\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP-CAT_L.F78A59A7.Up2Date
