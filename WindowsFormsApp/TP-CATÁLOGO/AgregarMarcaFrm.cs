@@ -38,7 +38,14 @@ namespace TP_CATÁLOGO
 
         private void btnAgregar_Click_1(object sender, EventArgs e)
         {
-            if(marca == null)
+            //Validación
+            if (string.IsNullOrWhiteSpace(txtNuevaMarca.Text))
+            {
+                MessageBox.Show("Por favor, ingrese una descripción para la marca", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (marca == null)
                 marca = new Marca();
 
             marca.Descripcion = txtNuevaMarca.Text;

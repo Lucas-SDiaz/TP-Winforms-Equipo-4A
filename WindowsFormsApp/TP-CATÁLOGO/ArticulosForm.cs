@@ -17,6 +17,7 @@ namespace TP_CATÁLOGO
         private List<Articulo> listaArticulo;
 
         ArticuloNegocio negocio = new ArticuloNegocio();
+
         public ArticulosForm()
         {
             InitializeComponent();

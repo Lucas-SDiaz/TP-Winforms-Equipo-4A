@@ -41,10 +41,18 @@ namespace TP_CATÁLOGO
        
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            //Validación
+            if (string.IsNullOrWhiteSpace(txtAgregarCategoria.Text))
+            {
+                MessageBox.Show("Por favor, ingrese una descripción para la categoría", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             if (categoria == null)
                 categoria = new Categoria();
 
             categoria.Descripcion = txtAgregarCategoria.Text;
+            
             if (categoria.ID_Categoria != 0)
             {
                 negocio.modificar(categoria);
