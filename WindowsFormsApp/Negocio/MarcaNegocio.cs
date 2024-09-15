@@ -16,6 +16,7 @@ namespace Negocio
             try
             {
                 AccesoDatos datos = new AccesoDatos();
+
                 datos.setQuery("SELECT Id, Descripcion FROM MARCAS");
                 datos.ejecutarLectura();
                 while (datos.Lector.Read())
@@ -40,6 +41,7 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
+
                 datos.setQuery("INSERT INTO MARCAS (Descripcion) VALUES('" + marca.Descripcion + "');");
                 datos.ejecutarAccion();
             }
@@ -51,6 +53,43 @@ namespace Negocio
             finally
             {
                 datos.cerrarConexion();
+            }
+        }
+        public void modificar(Marca marca)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setQuery("UPDATE MARCAS SET Descripcion = @Descripcion WHERE Id = @ID_Marca");
+                datos.setParameters("@ID_Marca", marca.ID_Marca);
+                datos.setParameters("@Descripcion", marca.Descripcion);
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+        public void eliminar(int Id)
+            //ELIMINACION FISICA. BORRA REGISTROS DIRECTAMENTE EN LA BASE DE DATOS.
+        {
+            try
+            {
+                AccesoDatos datos = new AccesoDatos();
+                datos.setQuery("DELETE FROM MARCAS WHERE Id = @ID_Marca");
+                datos.setParameters("@ID_Marca", Id);
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
             }
         }
     }

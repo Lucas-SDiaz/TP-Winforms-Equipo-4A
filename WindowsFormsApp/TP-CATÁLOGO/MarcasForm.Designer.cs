@@ -88,6 +88,7 @@
             this.btnModificarMarca.TabIndex = 28;
             this.btnModificarMarca.Text = "Modificar marca";
             this.btnModificarMarca.UseVisualStyleBackColor = true;
+            this.btnModificarMarca.Click += new System.EventHandler(this.btnModificarMarca_Click);
             // 
             // btnEliminarMarca
             // 
