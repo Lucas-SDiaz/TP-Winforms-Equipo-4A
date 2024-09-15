@@ -21,10 +21,19 @@ namespace TP_CATÁLOGO
         {
             InitializeComponent();
         }
-        public AgregarMarcaFrm(Marca marca)
+        public AgregarMarcaFrm(Marca marca, bool esModificacion = false)
         {
             InitializeComponent();
             this.marca = marca;
+            if (esModificacion)
+            {
+                lblAgregueNuevaMarca.Text = "Modificar marca";
+            }
+            else
+            {
+                lblAgregueNuevaMarca.Text = "Agregar nueva marca";
+
+            }
         }
 
         private void btnAgregar_Click_1(object sender, EventArgs e)

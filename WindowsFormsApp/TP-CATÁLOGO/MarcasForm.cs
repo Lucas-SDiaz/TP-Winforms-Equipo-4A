@@ -72,7 +72,7 @@ namespace TP_CATÁLOGO
         {
             {
                 Marca selected = (Marca)dgvMarcas.CurrentRow.DataBoundItem;
-                AgregarMarcaFrm editarMarca = new AgregarMarcaFrm(selected);
+                AgregarMarcaFrm editarMarca = new AgregarMarcaFrm(selected, true);
                 editarMarca.ShowDialog();
                 cargar();
             }
