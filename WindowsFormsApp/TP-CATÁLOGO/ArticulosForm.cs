@@ -56,13 +56,32 @@ namespace TP_CATÁLOGO
             {
                 MessageBox.Show(ex.ToString());
             }
+
             //Carga de los campos del desplegable para búsqueda avanzada.
             cboCampo.Items.Add("CodigoArticulo");
             cboCampo.Items.Add("Nombre");
             cboCampo.Items.Add("Marca");
             cboCampo.Items.Add("Categoría");
 
+            //Validaciones de búsqueda avanzada
+            //Deshabilito el botón de búsqueda al inicio
+            btnBuscar.Enabled = false;
 
+            cboCampo.SelectedIndexChanged += new EventHandler(ValidarCampos);
+            cboCriterio.SelectedIndexChanged += new EventHandler(ValidarCampos);
+        }
+
+        private void ValidarCampos(object sender, EventArgs e)
+        {
+            //Habilito la búsqueda solo si ambos ComboBox tienen selección
+            if (cboCampo.SelectedIndex != -1 && cboCriterio.SelectedIndex != -1 )
+            {
+                btnBuscar.Enabled = true;
+            }
+            else
+            {
+                btnBuscar.Enabled = false;
+            }
         }
 
         private void ocultarColumnas()
@@ -111,6 +130,12 @@ namespace TP_CATÁLOGO
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
+            if (cboCampo.SelectedIndex == -1 || cboCriterio.SelectedIndex == -1)
+            {
+                MessageBox.Show("Debe completar todos los campos para realizar una búsqueda.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             ArticuloNegocio negocio = new ArticuloNegocio();
             string campo = cboCampo.SelectedItem.ToString();
             string criterio = cboCriterio.SelectedItem.ToString();
