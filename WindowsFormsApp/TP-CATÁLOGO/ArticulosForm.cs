@@ -27,6 +27,7 @@ namespace TP_CATÁLOGO
 
         private void btnVerDetalle_Click(object sender, EventArgs e)
         {
+            
             ArticuloNegocio negocio = new ArticuloNegocio();
             Articulo selected;
             selected = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
