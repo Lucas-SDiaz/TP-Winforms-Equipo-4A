@@ -15,6 +15,8 @@ namespace TP_CATÁLOGO
     public partial class ArticulosForm : Form
     {
         private List<Articulo> listaArticulo;
+
+        ArticuloNegocio negocio = new ArticuloNegocio();
         public ArticulosForm()
         {
             InitializeComponent();
@@ -114,6 +116,43 @@ namespace TP_CATÁLOGO
             string criterio = cboCriterio.SelectedItem.ToString();
             string filtro = txtFiltroAvanzado.Text;
             dgvArticulos.DataSource = negocio.filtrar(campo, criterio, filtro);
+        }
+
+        private void btnEliminarArticulo_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                DialogResult respuesta = MessageBox.Show("¿Desea eliminar este artículo?", "Eliminado", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
+
+                if (respuesta == DialogResult.OK)
+                {
+                    Articulo selected = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                       
+                    negocio.eliminar(selected.Id);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            cargar();
+        }
+
+        private void cargar()
+        {
+            ArticuloNegocio negocio = new ArticuloNegocio();
+            try
+            {
+                listaArticulo = negocio.listar();
+                dgvArticulos.DataSource = listaArticulo;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }
