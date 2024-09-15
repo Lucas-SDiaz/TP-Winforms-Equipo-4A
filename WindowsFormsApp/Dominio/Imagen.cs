@@ -11,7 +11,7 @@ namespace Dominio
         public int ID_Imagen { get; set; }
         public int ID_Art {  get; set; } 
         public string Url { get; set; }
-        public Imagen() { }
+        public Imagen imagen { get; set; }
 
 
     }

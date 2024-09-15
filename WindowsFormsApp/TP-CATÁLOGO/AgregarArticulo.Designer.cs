@@ -1,6 +1,6 @@
 ﻿namespace TP_CATÁLOGO
 {
-    partial class AgregarArticulo
+    partial class FrmAgregarArticulo
     {
         /// <summary>
         /// Required designer variable.
@@ -41,8 +41,8 @@
             this.txtImagen = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.pbImagen = new System.Windows.Forms.PictureBox();
-            this.cbxMarca = new System.Windows.Forms.ComboBox();
-            this.cbxCategoria = new System.Windows.Forms.ComboBox();
+            this.cboMarca = new System.Windows.Forms.ComboBox();
+            this.cboCategoria = new System.Windows.Forms.ComboBox();
             this.lblVistaprevia = new System.Windows.Forms.Label();
             this.btnAgregarmas = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
@@ -132,60 +132,61 @@
             this.txtCodigo.Location = new System.Drawing.Point(157, 50);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(179, 22);
-            this.txtCodigo.TabIndex = 7;
-            this.txtCodigo.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtCodigo.TabIndex = 0;
             // 
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(157, 100);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(179, 22);
-            this.txtNombre.TabIndex = 8;
+            this.txtNombre.TabIndex = 1;
             // 
             // txtDescripcion
             // 
             this.txtDescripcion.Location = new System.Drawing.Point(157, 150);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(179, 22);
-            this.txtDescripcion.TabIndex = 9;
+            this.txtDescripcion.TabIndex = 2;
             // 
             // txtImagen
             // 
             this.txtImagen.Location = new System.Drawing.Point(157, 300);
             this.txtImagen.Name = "txtImagen";
             this.txtImagen.Size = new System.Drawing.Size(179, 22);
-            this.txtImagen.TabIndex = 10;
+            this.txtImagen.TabIndex = 5;
+            this.txtImagen.Leave += new System.EventHandler(this.txtImagen_Leave);
             // 
             // txtPrecio
             // 
             this.txtPrecio.Location = new System.Drawing.Point(157, 350);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(179, 22);
-            this.txtPrecio.TabIndex = 11;
+            this.txtPrecio.TabIndex = 6;
             // 
             // pbImagen
             // 
             this.pbImagen.Location = new System.Drawing.Point(530, 83);
             this.pbImagen.Name = "pbImagen";
             this.pbImagen.Size = new System.Drawing.Size(221, 201);
+            this.pbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbImagen.TabIndex = 12;
             this.pbImagen.TabStop = false;
             // 
-            // cbxMarca
+            // cboMarca
             // 
-            this.cbxMarca.FormattingEnabled = true;
-            this.cbxMarca.Location = new System.Drawing.Point(157, 197);
-            this.cbxMarca.Name = "cbxMarca";
-            this.cbxMarca.Size = new System.Drawing.Size(179, 24);
-            this.cbxMarca.TabIndex = 13;
+            this.cboMarca.FormattingEnabled = true;
+            this.cboMarca.Location = new System.Drawing.Point(157, 197);
+            this.cboMarca.Name = "cboMarca";
+            this.cboMarca.Size = new System.Drawing.Size(179, 24);
+            this.cboMarca.TabIndex = 3;
             // 
-            // cbxCategoria
+            // cboCategoria
             // 
-            this.cbxCategoria.FormattingEnabled = true;
-            this.cbxCategoria.Location = new System.Drawing.Point(157, 248);
-            this.cbxCategoria.Name = "cbxCategoria";
-            this.cbxCategoria.Size = new System.Drawing.Size(179, 24);
-            this.cbxCategoria.TabIndex = 14;
+            this.cboCategoria.FormattingEnabled = true;
+            this.cboCategoria.Location = new System.Drawing.Point(157, 248);
+            this.cboCategoria.Name = "cboCategoria";
+            this.cboCategoria.Size = new System.Drawing.Size(179, 24);
+            this.cboCategoria.TabIndex = 4;
             // 
             // lblVistaprevia
             // 
@@ -206,7 +207,7 @@
             this.btnAgregarmas.Location = new System.Drawing.Point(530, 298);
             this.btnAgregarmas.Name = "btnAgregarmas";
             this.btnAgregarmas.Size = new System.Drawing.Size(221, 32);
-            this.btnAgregarmas.TabIndex = 16;
+            this.btnAgregarmas.TabIndex = 7;
             this.btnAgregarmas.Text = "Agregar mas imagenes";
             this.btnAgregarmas.UseVisualStyleBackColor = true;
             // 
@@ -218,9 +219,10 @@
             this.btnAceptar.Location = new System.Drawing.Point(441, 386);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(152, 32);
-            this.btnAceptar.TabIndex = 17;
+            this.btnAceptar.TabIndex = 8;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnCancelar
             // 
@@ -230,11 +232,12 @@
             this.btnCancelar.Location = new System.Drawing.Point(620, 386);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(152, 32);
-            this.btnCancelar.TabIndex = 18;
+            this.btnCancelar.TabIndex = 9;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // AgregarArticulo
+            // FrmAgregarArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -243,8 +246,8 @@
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.btnAgregarmas);
             this.Controls.Add(this.lblVistaprevia);
-            this.Controls.Add(this.cbxCategoria);
-            this.Controls.Add(this.cbxMarca);
+            this.Controls.Add(this.cboCategoria);
+            this.Controls.Add(this.cboMarca);
             this.Controls.Add(this.pbImagen);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.txtImagen);
@@ -258,8 +261,9 @@
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblCodigo);
-            this.Name = "AgregarArticulo";
+            this.Name = "FrmAgregarArticulo";
             this.Text = "AgregarArticulo";
+            this.Load += new System.EventHandler(this.FrmAgregarArticulo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -281,8 +285,8 @@
         private System.Windows.Forms.TextBox txtImagen;
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.PictureBox pbImagen;
-        private System.Windows.Forms.ComboBox cbxMarca;
-        private System.Windows.Forms.ComboBox cbxCategoria;
+        private System.Windows.Forms.ComboBox cboMarca;
+        private System.Windows.Forms.ComboBox cboCategoria;
         private System.Windows.Forms.Label lblVistaprevia;
         private System.Windows.Forms.Button btnAgregarmas;
         private System.Windows.Forms.Button btnAceptar;

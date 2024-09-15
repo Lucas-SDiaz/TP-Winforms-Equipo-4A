@@ -50,7 +50,6 @@ C:\Users\carde\source\repos\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\b
 C:\Users\carde\source\repos\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\bin\Debug\TP-CATÁLOGO.exe
 C:\Users\carde\source\repos\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\bin\Debug\TP-CATÁLOGO.pdb
 C:\Users\carde\source\repos\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP-CATÁLOGO.csproj.AssemblyReference.cache
-C:\Users\carde\source\repos\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP_CATÁLOGO.AgregarArticulo.resources
 C:\Users\carde\source\repos\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP_CATÁLOGO.AgregarCategoriaFrm.resources
 C:\Users\carde\source\repos\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP_CATÁLOGO.AgregarMarcaFrm.resources
 C:\Users\carde\source\repos\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP_CATÁLOGO.ArticulosForm.resources
@@ -75,3 +74,9 @@ C:\Users\Jesica\Desktop\UTN\2024 Progamación III\TP-Winforms-Equipo-4A\WindowsF
 C:\Users\Jesica\Desktop\UTN\2024 Progamación III\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\bin\Debug\Dominio.pdb
 C:\Users\Jesica\Desktop\UTN\2024 Progamación III\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\bin\Debug\Negocio.pdb
 C:\Users\Jesica\Desktop\UTN\2024 Progamación III\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP-CAT_L.F78A59A7.Up2Date
+C:\Users\carde\Source\Repos\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\bin\Debug\Dominio.dll
+C:\Users\carde\Source\Repos\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\bin\Debug\Negocio.dll
+C:\Users\carde\Source\Repos\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\bin\Debug\Dominio.pdb
+C:\Users\carde\Source\Repos\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\bin\Debug\Negocio.pdb
+C:\Users\carde\Source\Repos\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP_CATÁLOGO.FrmAgregarArticulo.resources
+C:\Users\carde\Source\Repos\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP-CAT_L.F78A59A7.Up2Date

@@ -177,6 +177,164 @@ namespace Negocio
             }
         }
 
+        public void agregar(Articulo nuevo)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setQuery("Insert into ARTICULOS (Codigo,Nombre, Descripcion , IdMarca, IdCategoria, Precio) values ('" + nuevo.CodigoArticulo + "', '" + nuevo.Nombre + "','" + nuevo.Descripcion + "' , @IDMarca , @IDCategoria , @Precio)");
+                datos.setParameters("@IDMarca", nuevo.Marca.ID_Marca);
+                datos.setParameters("@IDCategoria", nuevo.Categoria.ID_Categoria);
+                datos.setParameters("@Precio", nuevo.Precio);
+                datos.ejecutarAccion();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
+        public void modificar(Articulo articuloParaModificar)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setQuery($"update ARTICULOS SET Codigo = '{articuloParaModificar.CodigoArticulo}', Nombre = '{articuloParaModificar.Nombre}', Descripcion = '{articuloParaModificar.Descripcion}', Precio = {articuloParaModificar.Precio}, IdCategoria = {articuloParaModificar.Categoria.ID_Categoria}, IdMarca = {articuloParaModificar.Marca.ID_Marca} WHERE Id = {articuloParaModificar.Id}");
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
+        public bool validarCodigoExistente(string codigo)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setQuery($"select 1 from ARTICULOS where Codigo = '{codigo}'");
+                datos.ejecutarLectura();
+
+                if (datos.Lector.Read())
+                {
+                    return false;
+                }
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
+        public int obtenerIdArticuloPorCodigo(string codigo)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setQuery($"select Id from ARTICULOS where Codigo = '{codigo}'");
+                datos.ejecutarLectura();
+
+                if (datos.Lector.Read())
+                {
+                    return (int)datos.Lector["Id"];
+                }
+
+                throw new Exception("Codigo articulo invalido");
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
+        public void agregarImagen(int idArticulo, string urlImagen)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setQuery($"Insert into IMAGENES (IdArticulo,ImagenUrl) values ({idArticulo}, '{urlImagen}')");
+                datos.ejecutarAccion();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
+        public int obtenerImagenPrincipal(int idArticulo)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            int imagen = 0;
+            try
+            {
+                datos.setQuery($"select TOP 1 Id from IMAGENES where IdArticulo = '{idArticulo}' ORDER BY Id ASC");
+                datos.ejecutarLectura();
+
+                while (datos.Lector.Read())
+                {
+                    imagen = (int)datos.Lector["Id"];
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+
+            return imagen;
+        }
+        public void modificarImagen(int idImagen, string imagenUrl)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setQuery($"update IMAGENES SET ImagenUrl = '{imagenUrl}' WHERE Id = {idImagen}");
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
     }
 }
 

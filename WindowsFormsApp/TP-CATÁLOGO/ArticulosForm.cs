@@ -180,6 +180,12 @@ namespace TP_CATÁLOGO
                 throw;
             }
         }
+
+        private void btnAgregarArticulos_Click(object sender, EventArgs e)
+        {
+            FrmAgregarArticulo alta = new FrmAgregarArticulo();
+            alta.ShowDialog();
+        }
     }
 }
 
