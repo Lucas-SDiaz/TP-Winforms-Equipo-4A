@@ -65,6 +65,74 @@ namespace Negocio
                 datos.cerrarConexion();
             }
         }
+        public void agregarImagen(int idArticulo, string urlImagen)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setQuery($"Insert into IMAGENES (IdArticulo,ImagenUrl) values ({idArticulo}, '{urlImagen}')");
+                datos.ejecutarAccion();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
+        public Imagen obtenerImagenPrincipal(int idArticulo)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            Imagen imagen = new Imagen();
+            //int imagen = 0;
+            try
+            {
+                //datos.setQuery($"select TOP 1 Id from IMAGENES where IdArticulo = '{idArticulo}' ORDER BY Id ASC");
+                datos.setQuery("select TOP 1 Id, IdArticulo, ImagenUrl from IMAGENES where IdArticulo = @idArt ORDER BY Id ASC");
+                datos.setParameters("@idArt", idArticulo);
+                datos.ejecutarLectura();
+
+                while (datos.Lector.Read())
+                {
+                    imagen.ID_Imagen = (int)datos.Lector["Id"];
+                    imagen.ID_Art = (int)datos.Lector["IdArticulo"];
+                    imagen.Url = (string)datos.Lector["ImagenUrl"];
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+
+            return imagen;
+        }
+        public void modificarImagen(int idImagen, string imagenUrl)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setQuery($"update IMAGENES SET ImagenUrl = '{imagenUrl}' WHERE Id = {idImagen}");
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
     }
 }
 

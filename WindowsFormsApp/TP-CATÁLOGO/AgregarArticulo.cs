@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,6 +18,11 @@ namespace TP_CATÁLOGO
     {
 
         private Articulo articulo = null;
+        private List<Imagen> imagenes = null;
+
+
+        int index = 0;
+
         public FrmAgregarArticulo()
         {
             InitializeComponent();
@@ -39,17 +46,24 @@ namespace TP_CATÁLOGO
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            Articulo articulo = new Articulo();
             ArticuloNegocio negocio = new ArticuloNegocio();
+            ImagenNegocio imgNegocio = new ImagenNegocio();
 
             try
             {
+                if (articulo == null)
+                {
+                    articulo = new Articulo();
+                    articulo.Imagenes = new List<Imagen>();
+                }
+               
+
                 articulo.CodigoArticulo = txtCodigo.Text;
                 articulo.Nombre = txtNombre.Text;
                 articulo.Descripcion = txtDescripcion.Text;
                 articulo.Marca = (Marca)cboMarca.SelectedItem;
                 articulo.Categoria = (Categoria)cboCategoria.SelectedItem;
-                //articulo.Imagen.Url = txtImagen.Text;
+
                 if (!string.IsNullOrWhiteSpace(txtPrecio.Text))
                 {
                     decimal precio = decimal.Parse(txtPrecio.Text);
@@ -60,19 +74,19 @@ namespace TP_CATÁLOGO
                 {
                     negocio.modificar(articulo);
 
-                    if (!string.IsNullOrWhiteSpace(txtImagen.Text))
-                    {
-                        int imagenPrincipal = negocio.obtenerImagenPrincipal(articulo.Id);
+                    //if (!string.IsNullOrWhiteSpace(txtURL.Text))
+                    //{
+                    //    int imagenPrincipal = negocio.obtenerImagenPrincipal(articulo.Id);
 
-                        if (imagenPrincipal > 0)
-                        {
-                            negocio.modificarImagen(imagenPrincipal, txtImagen.Text);
-                        }
-                        else
-                        {
-                            negocio.agregarImagen(articulo.Id, txtImagen.Text);
-                        }
-                    }
+                    //    if (imagenPrincipal > 0)
+                    //    {
+                    //        negocio.modificarImagen(imagenPrincipal, txtImagen.Text);
+                    //    }
+                    //    else
+                    //    {
+                    //        negocio.agregarImagen(articulo.Id, txtImagen.Text);
+                    //    }
+                    //}
 
                     MessageBox.Show("Modificado correctamente");
                 }
@@ -86,10 +100,10 @@ namespace TP_CATÁLOGO
 
                     negocio.agregar(articulo);
 
-                    if (!string.IsNullOrWhiteSpace(txtImagen.Text))
+                    if (!string.IsNullOrWhiteSpace(txtURL.Text))
                     {
                         int idArticulo = negocio.obtenerIdArticuloPorCodigo(txtCodigo.Text);
-                        negocio.agregarImagen(idArticulo, txtImagen.Text);
+                        imgNegocio.agregarImagen(idArticulo, txtURL.Text);
                     }
 
                     MessageBox.Show("Agregado correctamente");
@@ -108,6 +122,20 @@ namespace TP_CATÁLOGO
         {
             MarcaNegocio marcaNegocio = new MarcaNegocio();
             CategoriaNegocio categoriaNegocio = new CategoriaNegocio();
+
+            if (articulo == null)
+            {
+                btnAnterior.Visible = false;
+                btnSiguiente.Visible = false;
+                btnAgregarmas.Visible = false;
+            }
+            else
+            {
+                imagenes = articulo.Imagenes;                
+                lblImagen.Visible = false;
+                txtURL.Visible = false;
+                CargarImagen(txtURL.Text);
+            }
             try
             {
                 cboMarca.DataSource = marcaNegocio.listar();
@@ -120,17 +148,21 @@ namespace TP_CATÁLOGO
                 //cboCategoria.DisplayMember = "nombre";
                 //cboCategoria.SelectedIndex = 1;
 
-                //if (articulo != null)
-                //{
-                //    txtCodigo.Text = articulo.CodigoArticulo;
-                //    txtNombre.Text = articulo.Nombre;
-                //    txtDescripcion.Text = articulo.Descripcion;
-                //    txtImagen.Text = articulo.Imagen.Url;
-                //    txtPrecio.Text = Convert.ToString(articulo.Precio);
+                if (articulo != null)
+                {
+                    txtCodigo.Text = articulo.CodigoArticulo;
+                    txtNombre.Text = articulo.Nombre;
+                    txtDescripcion.Text = articulo.Descripcion;
+                    //txtImagen.Text = articulo.Imagenes[0].Url;
+                    CargarImagen(articulo.Imagenes[0].Url);
+                    //CargarImagen(txtURL.Text);
 
-                //    cboMarca.SelectedValue = articulo.Marca.ID_Marca;
-                //    cboCategoria.SelectedValue = articulo.Categoria.ID_Categoria;
-                //}
+
+                    txtPrecio.Text = Convert.ToString(articulo.Precio);
+
+                    cboMarca.SelectedValue = articulo.Marca.ID_Marca;
+                    cboCategoria.SelectedValue = articulo.Categoria.ID_Categoria;
+                }
             }
             catch (Exception ex)
             {
@@ -138,15 +170,77 @@ namespace TP_CATÁLOGO
             }
         }
 
-        private void txtImagen_Leave(object sender, EventArgs e)
+        //private void txtImagen_Leave(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        //pbImagen.Load(txtImagen.Text);
+        //    }
+        //    catch (Exception)
+        //    {
+        //        pbImagen.Load("https://bub.bh/wp-content/uploads/2018/02/image-placeholder.jpg");
+        //    }
+        //}
+        private void CargarImagen(string imagenes)
         {
             try
             {
-                pbImagen.Load(txtImagen.Text);
+                pbImagen.Load(imagenes);
             }
             catch (Exception)
             {
-                pbImagen.Load("https://bub.bh/wp-content/uploads/2018/02/image-placeholder.jpg");
+                pbImagen.Load("https://media.istockphoto.com/id/1128826884/es/vector/ning%C3%BAn-s%C3%ADmbolo-de-vector-de-imagen-falta-icono-disponible-no-hay-galer%C3%ADa-para-este-momento.jpg?s=612x612&w=0&k=20&c=9vnjI4XI3XQC0VHfuDePO7vNJE7WDM8uzQmZJ1SnQgk=");
+            }
+        }
+        private void btnSiguiente_Click(object sender, EventArgs e)
+        {
+            int max = articulo.Imagenes.Count;
+            if (index == max - 1)
+                MessageBox.Show("No hay mas imagenes que mostrar!");
+            else
+            {
+                index++;
+                CargarImagen(imagenes[index].Url);
+            }
+        }
+
+        private void btnAnterior_Click(object sender, EventArgs e)
+        {
+            if (index == 0)
+                index = 0;
+            else
+            {
+                index--;
+                CargarImagen(imagenes[index].Url);
+            }
+        }
+
+        private void btnAgregarmas_Click(object sender, EventArgs e)
+        {
+            AgregarImagenesfrm ventanaImg = new AgregarImagenesfrm(articulo);
+            ventanaImg.ShowDialog();
+        }
+
+        private void btnSiguiente_Click_1(object sender, EventArgs e)
+        {
+            int max = imagenes.Count;
+            if (index == max - 1)
+                MessageBox.Show("No hay mas imagenes que mostrar!");
+            else
+            {
+                index++;
+                CargarImagen(imagenes[index].Url);
+            }
+        }
+
+        private void btnAnterior_Click_1(object sender, EventArgs e)
+        {
+            if (index == 0)
+                index = 0;
+            else
+            {
+                index--;
+                CargarImagen(imagenes[index].Url);
             }
         }
     }

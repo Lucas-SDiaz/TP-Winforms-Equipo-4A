@@ -185,6 +185,19 @@ namespace TP_CATÁLOGO
         {
             FrmAgregarArticulo alta = new FrmAgregarArticulo();
             alta.ShowDialog();
+            cargar();
+        }
+
+        private void btnModificarArticulo_Click(object sender, EventArgs e)
+        {
+            Articulo selected = new Articulo();
+                
+            selected = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            selected.Imagenes = new List<Imagen>();
+            selected.Imagenes = negocio.listaImagenesXArt(selected);
+            FrmAgregarArticulo editarArticulo = new FrmAgregarArticulo(selected);
+            editarArticulo.ShowDialog();
+            cargar();
         }
     }
 }

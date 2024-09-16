@@ -81,9 +81,6 @@ namespace TP_CATÁLOGO
                 index --;
                 CargarImagen(imagenes[index].Url);
             }
-
-
-
         }
     }
 }

@@ -68,6 +68,10 @@ namespace Negocio
 
                 throw ex;
             }
+            finally
+            {
+                datos.cerrarConexion();
+            }
         }
 
         public List<Articulo> filtrar(string campo, string criterio, string filtro)
@@ -206,7 +210,14 @@ namespace Negocio
 
             try
             {
-                datos.setQuery($"update ARTICULOS SET Codigo = '{articuloParaModificar.CodigoArticulo}', Nombre = '{articuloParaModificar.Nombre}', Descripcion = '{articuloParaModificar.Descripcion}', Precio = {articuloParaModificar.Precio}, IdCategoria = {articuloParaModificar.Categoria.ID_Categoria}, IdMarca = {articuloParaModificar.Marca.ID_Marca} WHERE Id = {articuloParaModificar.Id}");
+                datos.setQuery("update ARTICULOS SET Codigo = @Cod, Nombre = @Nombre, Descripcion = @Descripcion, IdMarca = @IdMarca, IdCategoria = @IdCategoria, Precio = @Precio  WHERE Id = @ID");
+                datos.setParameters("@Cod", articuloParaModificar.CodigoArticulo);
+                datos.setParameters("@Nombre", articuloParaModificar.Nombre);
+                datos.setParameters("@Descripcion", articuloParaModificar.Descripcion);
+                datos.setParameters("@IdMarca", articuloParaModificar.Marca.ID_Marca);
+                datos.setParameters("@IdCategoria", articuloParaModificar.Categoria.ID_Categoria);
+                datos.setParameters("@Precio", articuloParaModificar.Precio);
+                datos.setParameters("@ID", articuloParaModificar.Id);
                 datos.ejecutarAccion();
             }
             catch (Exception ex)
@@ -260,70 +271,6 @@ namespace Negocio
                 }
 
                 throw new Exception("Codigo articulo invalido");
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-                datos.cerrarConexion();
-            }
-        }
-
-        public void agregarImagen(int idArticulo, string urlImagen)
-        {
-            AccesoDatos datos = new AccesoDatos();
-
-            try
-            {
-                datos.setQuery($"Insert into IMAGENES (IdArticulo,ImagenUrl) values ({idArticulo}, '{urlImagen}')");
-                datos.ejecutarAccion();
-
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-                datos.cerrarConexion();
-            }
-        }
-
-        public int obtenerImagenPrincipal(int idArticulo)
-        {
-            AccesoDatos datos = new AccesoDatos();
-            int imagen = 0;
-            try
-            {
-                datos.setQuery($"select TOP 1 Id from IMAGENES where IdArticulo = '{idArticulo}' ORDER BY Id ASC");
-                datos.ejecutarLectura();
-
-                while (datos.Lector.Read())
-                {
-                    imagen = (int)datos.Lector["Id"];
-                }
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-                datos.cerrarConexion();
-            }
-
-            return imagen;
-        }
-        public void modificarImagen(int idImagen, string imagenUrl)
-        {
-            AccesoDatos datos = new AccesoDatos();
-
-            try
-            {
-                datos.setQuery($"update IMAGENES SET ImagenUrl = '{imagenUrl}' WHERE Id = {idImagen}");
-                datos.ejecutarAccion();
             }
             catch (Exception ex)
             {
