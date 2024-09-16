@@ -166,8 +166,8 @@ namespace Negocio
             try
             {
                 AccesoDatos datos = new AccesoDatos();
-                datos.setQuery("DELETE FROM ARTICULOS WHERE Id = @A.Id");
-                datos.setParameters("@A.Id", id);
+                datos.setQuery("DELETE FROM ARTICULOS WHERE Id = @Id");
+                datos.setParameters("@Id", id);
                 datos.ejecutarAccion();
 
             }

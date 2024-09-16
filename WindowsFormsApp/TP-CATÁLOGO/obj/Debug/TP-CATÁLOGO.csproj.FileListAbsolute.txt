@@ -80,3 +80,9 @@ C:\Users\carde\Source\Repos\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\b
 C:\Users\carde\Source\Repos\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\bin\Debug\Negocio.pdb
 C:\Users\carde\Source\Repos\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP_CATÁLOGO.FrmAgregarArticulo.resources
 C:\Users\carde\Source\Repos\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP-CAT_L.F78A59A7.Up2Date
+C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\bin\Debug\Dominio.dll
+C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\bin\Debug\Negocio.dll
+C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\bin\Debug\Dominio.pdb
+C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\bin\Debug\Negocio.pdb
+C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP_CATÁLOGO.FrmAgregarArticulo.resources
+C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP-CATÁL.F78A59A7.Up2Date
