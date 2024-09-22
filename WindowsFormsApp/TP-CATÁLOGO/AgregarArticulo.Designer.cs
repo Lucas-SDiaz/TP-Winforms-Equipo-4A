@@ -57,9 +57,10 @@
             this.lblCodigo.AutoSize = true;
             this.lblCodigo.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCodigo.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.lblCodigo.Location = new System.Drawing.Point(66, 34);
+            this.lblCodigo.Location = new System.Drawing.Point(50, 28);
+            this.lblCodigo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(68, 22);
+            this.lblCodigo.Size = new System.Drawing.Size(57, 18);
             this.lblCodigo.TabIndex = 0;
             this.lblCodigo.Text = "Código";
             // 
@@ -68,9 +69,10 @@
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.lblNombre.Location = new System.Drawing.Point(66, 84);
+            this.lblNombre.Location = new System.Drawing.Point(50, 68);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(76, 22);
+            this.lblNombre.Size = new System.Drawing.Size(64, 18);
             this.lblNombre.TabIndex = 1;
             this.lblNombre.Text = "Nombre";
             // 
@@ -79,9 +81,10 @@
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescripcion.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.lblDescripcion.Location = new System.Drawing.Point(66, 134);
+            this.lblDescripcion.Location = new System.Drawing.Point(50, 109);
+            this.lblDescripcion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(103, 22);
+            this.lblDescripcion.Size = new System.Drawing.Size(86, 18);
             this.lblDescripcion.TabIndex = 2;
             this.lblDescripcion.Text = "Descripción";
             // 
@@ -90,9 +93,10 @@
             this.lblMarca.AutoSize = true;
             this.lblMarca.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMarca.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.lblMarca.Location = new System.Drawing.Point(66, 184);
+            this.lblMarca.Location = new System.Drawing.Point(50, 150);
+            this.lblMarca.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(59, 22);
+            this.lblMarca.Size = new System.Drawing.Size(50, 18);
             this.lblMarca.TabIndex = 3;
             this.lblMarca.Text = "Marca";
             // 
@@ -101,9 +105,10 @@
             this.lblCategoria.AutoSize = true;
             this.lblCategoria.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategoria.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.lblCategoria.Location = new System.Drawing.Point(66, 234);
+            this.lblCategoria.Location = new System.Drawing.Point(50, 190);
+            this.lblCategoria.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(88, 22);
+            this.lblCategoria.Size = new System.Drawing.Size(74, 18);
             this.lblCategoria.TabIndex = 4;
             this.lblCategoria.Text = "Categoría";
             // 
@@ -112,45 +117,51 @@
             this.lblPrecio.AutoSize = true;
             this.lblPrecio.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrecio.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.lblPrecio.Location = new System.Drawing.Point(66, 284);
+            this.lblPrecio.Location = new System.Drawing.Point(50, 231);
+            this.lblPrecio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(59, 22);
+            this.lblPrecio.Size = new System.Drawing.Size(51, 18);
             this.lblPrecio.TabIndex = 6;
             this.lblPrecio.Text = "Precio";
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(198, 34);
+            this.txtCodigo.Location = new System.Drawing.Point(148, 28);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(179, 22);
+            this.txtCodigo.Size = new System.Drawing.Size(135, 20);
             this.txtCodigo.TabIndex = 0;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(198, 84);
+            this.txtNombre.Location = new System.Drawing.Point(148, 68);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(179, 22);
+            this.txtNombre.Size = new System.Drawing.Size(135, 20);
             this.txtNombre.TabIndex = 1;
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(198, 134);
+            this.txtDescripcion.Location = new System.Drawing.Point(148, 109);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(179, 22);
+            this.txtDescripcion.Size = new System.Drawing.Size(135, 20);
             this.txtDescripcion.TabIndex = 2;
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(198, 284);
+            this.txtPrecio.Location = new System.Drawing.Point(148, 231);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(179, 22);
-            this.txtPrecio.TabIndex = 6;
+            this.txtPrecio.Size = new System.Drawing.Size(135, 20);
+            this.txtPrecio.TabIndex = 5;
             // 
             // pbImagen
             // 
-            this.pbImagen.Location = new System.Drawing.Point(458, 34);
+            this.pbImagen.Location = new System.Drawing.Point(344, 28);
+            this.pbImagen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbImagen.Name = "pbImagen";
-            this.pbImagen.Size = new System.Drawing.Size(260, 234);
+            this.pbImagen.Size = new System.Drawing.Size(195, 190);
             this.pbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbImagen.TabIndex = 12;
             this.pbImagen.TabStop = false;
@@ -158,17 +169,19 @@
             // cboMarca
             // 
             this.cboMarca.FormattingEnabled = true;
-            this.cboMarca.Location = new System.Drawing.Point(198, 181);
+            this.cboMarca.Location = new System.Drawing.Point(148, 147);
+            this.cboMarca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboMarca.Name = "cboMarca";
-            this.cboMarca.Size = new System.Drawing.Size(179, 24);
+            this.cboMarca.Size = new System.Drawing.Size(135, 21);
             this.cboMarca.TabIndex = 3;
             // 
             // cboCategoria
             // 
             this.cboCategoria.FormattingEnabled = true;
-            this.cboCategoria.Location = new System.Drawing.Point(198, 232);
+            this.cboCategoria.Location = new System.Drawing.Point(148, 188);
+            this.cboCategoria.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboCategoria.Name = "cboCategoria";
-            this.cboCategoria.Size = new System.Drawing.Size(179, 24);
+            this.cboCategoria.Size = new System.Drawing.Size(135, 21);
             this.cboCategoria.TabIndex = 4;
             // 
             // lblVistaprevia
@@ -176,9 +189,10 @@
             this.lblVistaprevia.AutoSize = true;
             this.lblVistaprevia.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVistaprevia.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.lblVistaprevia.Location = new System.Drawing.Point(524, 9);
+            this.lblVistaprevia.Location = new System.Drawing.Point(393, 7);
+            this.lblVistaprevia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVistaprevia.Name = "lblVistaprevia";
-            this.lblVistaprevia.Size = new System.Drawing.Size(103, 22);
+            this.lblVistaprevia.Size = new System.Drawing.Size(87, 18);
             this.lblVistaprevia.TabIndex = 15;
             this.lblVistaprevia.Text = "Vista Previa";
             // 
@@ -187,9 +201,10 @@
             this.btnAgregarmas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarmas.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarmas.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnAgregarmas.Location = new System.Drawing.Point(528, 284);
+            this.btnAgregarmas.Location = new System.Drawing.Point(396, 231);
+            this.btnAgregarmas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAgregarmas.Name = "btnAgregarmas";
-            this.btnAgregarmas.Size = new System.Drawing.Size(124, 54);
+            this.btnAgregarmas.Size = new System.Drawing.Size(93, 44);
             this.btnAgregarmas.TabIndex = 7;
             this.btnAgregarmas.Text = "Agregar mas imagenes";
             this.btnAgregarmas.UseVisualStyleBackColor = true;
@@ -200,10 +215,11 @@
             this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAceptar.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAceptar.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnAceptar.Location = new System.Drawing.Point(430, 365);
+            this.btnAceptar.Location = new System.Drawing.Point(322, 297);
+            this.btnAceptar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(152, 32);
-            this.btnAceptar.TabIndex = 8;
+            this.btnAceptar.Size = new System.Drawing.Size(114, 26);
+            this.btnAceptar.TabIndex = 7;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
@@ -213,19 +229,21 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnCancelar.Location = new System.Drawing.Point(594, 365);
+            this.btnCancelar.Location = new System.Drawing.Point(446, 297);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(152, 32);
-            this.btnCancelar.TabIndex = 9;
+            this.btnCancelar.Size = new System.Drawing.Size(114, 26);
+            this.btnCancelar.TabIndex = 8;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnAnterior
             // 
-            this.btnAnterior.Location = new System.Drawing.Point(423, 134);
+            this.btnAnterior.Location = new System.Drawing.Point(317, 109);
+            this.btnAnterior.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAnterior.Name = "btnAnterior";
-            this.btnAnterior.Size = new System.Drawing.Size(29, 25);
+            this.btnAnterior.Size = new System.Drawing.Size(22, 20);
             this.btnAnterior.TabIndex = 17;
             this.btnAnterior.Text = "<";
             this.btnAnterior.UseVisualStyleBackColor = true;
@@ -233,9 +251,10 @@
             // 
             // btnSiguiente
             // 
-            this.btnSiguiente.Location = new System.Drawing.Point(724, 134);
+            this.btnSiguiente.Location = new System.Drawing.Point(543, 109);
+            this.btnSiguiente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(29, 25);
+            this.btnSiguiente.Size = new System.Drawing.Size(22, 20);
             this.btnSiguiente.TabIndex = 18;
             this.btnSiguiente.Text = ">";
             this.btnSiguiente.UseVisualStyleBackColor = true;
@@ -246,24 +265,27 @@
             this.lblImagen.AutoSize = true;
             this.lblImagen.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblImagen.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.lblImagen.Location = new System.Drawing.Point(66, 332);
+            this.lblImagen.Location = new System.Drawing.Point(50, 270);
+            this.lblImagen.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblImagen.Name = "lblImagen";
-            this.lblImagen.Size = new System.Drawing.Size(107, 22);
+            this.lblImagen.Size = new System.Drawing.Size(88, 18);
             this.lblImagen.TabIndex = 19;
             this.lblImagen.Text = "URL imagen";
             // 
             // txtURL
             // 
-            this.txtURL.Location = new System.Drawing.Point(198, 332);
+            this.txtURL.Location = new System.Drawing.Point(148, 270);
+            this.txtURL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtURL.Name = "txtURL";
-            this.txtURL.Size = new System.Drawing.Size(179, 22);
-            this.txtURL.TabIndex = 20;
+            this.txtURL.Size = new System.Drawing.Size(135, 20);
+            this.txtURL.TabIndex = 6;
+            this.txtURL.Leave += new System.EventHandler(this.txtURL_Leave);
             // 
             // FrmAgregarArticulo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.txtURL);
             this.Controls.Add(this.lblImagen);
             this.Controls.Add(this.btnSiguiente);
@@ -285,6 +307,7 @@
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblCodigo);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmAgregarArticulo";
             this.Text = "AgregarArticulo";
             this.Load += new System.EventHandler(this.FrmAgregarArticulo_Load);

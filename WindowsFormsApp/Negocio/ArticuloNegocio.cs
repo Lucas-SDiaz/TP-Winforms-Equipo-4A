@@ -18,7 +18,7 @@ namespace Negocio
             List<Articulo> lista = new List<Articulo>();
             try
             {
-                datos.setQuery("SELECT A.Id ,Codigo, Nombre, A.Descripcion, M.Descripcion AS 'Marca', C.Descripcion AS 'Categoría', Precio FROM ARTICULOS A, MARCAS M , CATEGORIAS C where M.Id = A.IdMarca and A.IdCategoria = c.Id");
+                datos.setQuery("SELECT A.Id ,Codigo, Nombre, A.Descripcion, M.Descripcion AS 'Marca', M.Id, C.Descripcion AS 'Categoría', C.Id, Precio FROM ARTICULOS A, MARCAS M , CATEGORIAS C where M.Id = A.IdMarca and A.IdCategoria = c.Id");
                 datos.ejecutarLectura();
                 while (datos.Lector.Read())
                 {
@@ -29,9 +29,11 @@ namespace Negocio
                     aux.Descripcion = (string)datos.Lector["Descripcion"];
                     aux.Marca = new Marca();
                     aux.Marca.Descripcion = (string)datos.Lector["Marca"];
+                    aux.Marca.ID_Marca = datos.Lector.GetInt32(5);
                     aux.Categoria = new Categoria();
                     aux.Categoria.Descripcion = (string)datos.Lector["Categoría"];
-                    aux.Precio = datos.Lector.GetDecimal(6);
+                    aux.Categoria.ID_Categoria = datos.Lector.GetInt32(7);
+                    aux.Precio = datos.Lector.GetDecimal(8);
 
                     lista.Add(aux);
                 }

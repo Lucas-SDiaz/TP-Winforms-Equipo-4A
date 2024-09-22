@@ -97,8 +97,12 @@ namespace TP_CATÁLOGO
                         MessageBox.Show("El codigo ya existe");
                         return;
                     }
+                    else
+                    {
+                        negocio.agregar(articulo);
+                    }
+                    
 
-                    negocio.agregar(articulo);
 
                     if (!string.IsNullOrWhiteSpace(txtURL.Text))
                     {
@@ -134,18 +138,17 @@ namespace TP_CATÁLOGO
                 imagenes = articulo.Imagenes;                
                 lblImagen.Visible = false;
                 txtURL.Visible = false;
-                CargarImagen(txtURL.Text);
             }
             try
             {
                 cboMarca.DataSource = marcaNegocio.listar();
-                //cboMarca.ValueMember = "id";
-                //cboMarca.DisplayMember = "nombre";
+                //cboMarca.ValueMember = "Id";
+                //cboMarca.DisplayMember = "Descripcion";
                 //cboMarca.SelectedIndex = 1;
 
                 cboCategoria.DataSource = categoriaNegocio.listar();
-                //cboCategoria.ValueMember = "id";
-                //cboCategoria.DisplayMember = "nombre";
+                //cboCategoria.ValueMember = "Id";
+                //cboCategoria.DisplayMember = "Descripcion";
                 //cboCategoria.SelectedIndex = 1;
 
                 if (articulo != null)
@@ -153,9 +156,7 @@ namespace TP_CATÁLOGO
                     txtCodigo.Text = articulo.CodigoArticulo;
                     txtNombre.Text = articulo.Nombre;
                     txtDescripcion.Text = articulo.Descripcion;
-                    //txtImagen.Text = articulo.Imagenes[0].Url;
                     CargarImagen(articulo.Imagenes[0].Url);
-                    //CargarImagen(txtURL.Text);
 
 
                     txtPrecio.Text = Convert.ToString(articulo.Precio);
@@ -242,6 +243,11 @@ namespace TP_CATÁLOGO
                 index--;
                 CargarImagen(imagenes[index].Url);
             }
+        }
+
+        private void txtURL_Leave(object sender, EventArgs e)
+        {
+            CargarImagen(txtURL.Text);
         }
     }
 }

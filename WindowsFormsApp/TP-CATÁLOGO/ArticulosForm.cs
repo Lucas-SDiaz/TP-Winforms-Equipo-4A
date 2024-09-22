@@ -90,6 +90,7 @@ namespace TP_CATÁLOGO
             dgvArticulos.Columns["Id"].Visible = false;
             dgvArticulos.Columns["Precio"].Visible = false;
             dgvArticulos.Columns["Descripcion"].Visible = false;
+            dgvArticulos.Columns["Imagen"].Visible=false;
             
         }
 

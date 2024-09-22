@@ -86,3 +86,4 @@ C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-C
 C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\bin\Debug\Negocio.pdb
 C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP_CATÁLOGO.FrmAgregarArticulo.resources
 C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP-CATÁL.F78A59A7.Up2Date
+C:\Users\ZGA - amigues\Desktop\github\TP-Winforms-Equipo-4A\WindowsFormsApp\TP-CATÁLOGO\obj\Debug\TP_CATÁLOGO.AgregarImagenesfrm.resources
